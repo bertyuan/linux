@@ -120,6 +120,7 @@ TODOList:
    :maxdepth: 1
 
    magic-number
+   applying-patches
 
 TODOList:
 
