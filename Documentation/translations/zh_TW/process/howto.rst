@@ -146,8 +146,8 @@ Linux核心程式碼中包含有大量的文件。這些文件對於學習如何
     有助於核心開發的外部文件列表。如果你在核心自帶的文件中沒有找到你想找
     的內容，可以查看這些文件。
 
-  :ref:`Documentation/process/applying-patches.rst <applying_patches>`
-    關於補丁是什麼以及如何將它打在不同核心開發分支上的好介紹
+  :doc:`Documentation/translations/zh_TW/process/applying-patches.rst <applying-patches>`
+    說明何謂修補程式，以及如何將它套用至不同核心開發分支的實用介紹
 
 核心還擁有大量從程式碼自動產生或者從 ReStructuredText(ReST) 標記產生的文件，
 比如這個文件，它包含核心內部API的全面介紹以及如何妥善處理加鎖的規則。所有
@@ -498,4 +498,3 @@ Kerrisk和Alex Shepard的評審、建議和貢獻。沒有他們的幫助，這�
 
 
 英文版維護者： Greg Kroah-Hartman <greg@kroah.com>
-

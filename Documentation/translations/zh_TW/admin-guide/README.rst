@@ -86,7 +86,7 @@ Linux內核6.x版本 <http://kernel.org/>
    補丁，則不應先應用6.0.1和6.0.2的補丁。類似地，如果您運行的是6.0.2內核，
    並且希望跳轉到6.0.3，那麼在應用6.0.3補丁之前，必須首先撤銷6.0.2補丁
    （即patch -R）。更多關於這方面的內容，請閱讀
-   :ref:`Documentation/process/applying-patches.rst <applying_patches>` 。
+   Documentation/translations/zh_TW/process/applying-patches.rst 。
 
    或者，腳本 patch-kernel 可以用來自動化這個過程。它能確定當前內核版本並
    應用找到的所有補丁::
@@ -292,4 +292,3 @@ Documentation/translations/zh_CN/admin-guide/bug-hunting.rst 。
 更多用GDB調試內核的信息，請參閱：
 Documentation/translations/zh_CN/dev-tools/gdb-kernel-debugging.rst
 和 Documentation/process/debugging/kgdb.rst 。
-
