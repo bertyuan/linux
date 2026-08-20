@@ -778,6 +778,8 @@ SSH 的信任方法”。使用 SSH，第一次连接到远程系统时，其密
 
     trust-model tofu+pgp
 
+.. _cn_kernel_org_trust_repository:
+
 使用 kernel.org 信任网仓库
 --------------------------
 
