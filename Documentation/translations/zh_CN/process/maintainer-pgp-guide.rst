@@ -7,9 +7,6 @@
 
  司延腾 Yanteng Si <siyanteng@loongson.cn>
 
-:校译:
-
-
 ===================
 内核维护者 PGP 指南
 ===================
