@@ -37,14 +37,18 @@ class GitCommandError(RuntimeError):
     """An error reported by a Git command."""
 
 
-def run_git_command(command):
-    """Run a Git command and return its output."""
+class BaselineError(RuntimeError):
+    """An error which prevents a translation baseline from being used."""
+
+
+def run_git_command(command, expected_exit_codes=(0,)):
+    """Run a Git command and return its output and exit status."""
     logging.debug(command)
     pipe = os.popen(f"{command} 2>&1")
     result = pipe.read()
     status = pipe.close()
     exit_code = 0 if status is None else os.waitstatus_to_exitcode(status)
-    if exit_code:
+    if exit_code not in expected_exit_codes:
         details = result.strip()
         if details:
             raise GitCommandError(
@@ -53,7 +57,7 @@ def run_git_command(command):
         raise GitCommandError(
             f"Git command failed with exit code {exit_code}: {command}"
         )
-    return result
+    return result, exit_code
 
 
 def get_origin_path(file_path):
@@ -87,11 +91,18 @@ def parse_commit(result):
 def get_latest_commit_from(file_path, commit):
     """Get the latest commit from the specified commit for the specified file"""
     command = f"git log --format='%H%x00%at%x00%B' {commit} -1 -- {file_path}"
-    result = run_git_command(command)
+    result, _ = run_git_command(command)
     parsed = parse_commit(result)
     if parsed is not None:
         logging.debug("Result: %s", parsed["hash"])
     return parsed
+
+
+def get_commit(commit):
+    """Get information about exactly the specified commit."""
+    command = f"git show -s --format='%H%x00%at%x00%B' {commit}"
+    result, _ = run_git_command(command)
+    return parse_commit(result)
 
 
 def get_origin_from_trans(origin_path, t_from_head):
@@ -104,42 +115,98 @@ def get_origin_from_trans(origin_path, t_from_head):
     return o_from_t
 
 
-def get_origin_from_trans_smartly(origin_path, t_from_head):
-    """Get the latest origin commit from the formatted translation commit:
-    (1) update to commit HASH (TITLE)
-    (2) Update the translation through commit HASH (TITLE)
-    """
-    # catch flag for 12-bit commit hash
-    hash_re = r'([0-9a-f]{12})'
-    # pattern 1: contains "update to commit HASH"
-    pat_update_to = re.compile(rf'update to commit {hash_re}')
-    # pattern 2: contains "Update the translation through commit HASH"
-    pat_update_translation = re.compile(rf'Update the translation through commit {hash_re}')
+BASELINE_RE = re.compile(
+    r"\b(?:update\s+to(?:\s+the)?\s+commit|"
+    r"update\s+the\s+translation\s+through\s+commit)\s+"
+    # Four is Git's minimum abbreviation length; Git resolves ambiguity below.
+    r"([0-9a-f]{4,64})\b",
+    re.IGNORECASE,
+)
 
-    origin_commit_hash = None
-    for line in t_from_head["message"]:
-        # check if the line matches the first pattern
-        match = pat_update_to.search(line)
-        if match:
-            origin_commit_hash = match.group(1)
-            break
-        # check if the line matches the second pattern
-        match = pat_update_translation.search(line)
-        if match:
-            origin_commit_hash = match.group(1)
-            break
-    if origin_commit_hash is None:
+
+def extract_baseline_candidates(message):
+    """Return every baseline object name recorded in a commit message."""
+    return BASELINE_RE.findall("\n".join(message))
+
+
+def resolve_commit(candidate):
+    """Resolve an abbreviated or full object name to a commit."""
+    result, _ = run_git_command(f"git rev-parse --verify {candidate}^{{commit}}")
+    return result.strip()
+
+
+def candidate_modifies_origin(candidate, origin_path):
+    """Return whether the candidate commit itself modifies origin_path."""
+    command = (
+        "git diff-tree --root -m --no-commit-id --name-only -r "
+        f"{candidate} -- {origin_path}"
+    )
+    result, _ = run_git_command(command)
+    return bool(result.strip())
+
+
+def is_ancestor(commit1, commit2):
+    """Return whether commit1 is an ancestor of commit2."""
+    command = f"git merge-base --is-ancestor {commit1} {commit2}"
+    _, exit_code = run_git_command(command, expected_exit_codes=(0, 1))
+    return exit_code == 0
+
+
+def select_latest_baseline(candidates, translation_commit, origin_path):
+    """Select the descendant of all other valid baseline candidates."""
+    if len(candidates) == 1:
+        return candidates[0]
+
+    latest = [
+        candidate
+        for candidate in candidates
+        if all(
+            other == candidate or is_ancestor(other, candidate)
+            for other in candidates
+        )
+    ]
+    if len(latest) != 1:
+        raise BaselineError(
+            f"ambiguous English baselines in translation commit "
+            f"{translation_commit} for {origin_path}: {', '.join(candidates)}"
+        )
+    return latest[0]
+
+
+def get_origin_from_trans_smartly(origin_path, t_from_head):
+    """Get a validated explicit baseline from a translation commit."""
+    candidates = extract_baseline_candidates(t_from_head["message"])
+    valid_candidates = []
+    for candidate in candidates:
+        try:
+            resolved = resolve_commit(candidate)
+        except GitCommandError as error:
+            logging.warning("Rejecting baseline %s: %s", candidate, error)
+            continue
+        if not candidate_modifies_origin(resolved, origin_path):
+            logging.debug(
+                "Rejecting baseline %s: it did not modify %s",
+                candidate, origin_path,
+            )
+            continue
+        if resolved not in valid_candidates:
+            valid_candidates.append(resolved)
+
+    if not valid_candidates:
         return None
-    o_from_t = get_latest_commit_from(origin_path, origin_commit_hash)
-    if o_from_t is not None:
-        logging.debug("tracked origin commit id: %s", o_from_t["hash"])
-    return o_from_t
+
+    baseline = select_latest_baseline(
+        valid_candidates, t_from_head["hash"], origin_path
+    )
+    logging.debug("tracked explicit origin commit id: %s", baseline)
+    return get_commit(baseline)
 
 
 def get_commits_count_between(opath, commit1, commit2):
     """Get the commits count between two commits for the specified file"""
     command = f"git log --pretty=format:%H {commit1}...{commit2} -- {opath}"
-    result = run_git_command(command).split("\n")
+    output, _ = run_git_command(command)
+    result = output.split("\n")
     # filter out empty lines
     result = list(filter(lambda x: x != "", result))
     return result
@@ -148,7 +215,8 @@ def get_commits_count_between(opath, commit1, commit2):
 def pretty_output(commit):
     """Pretty print the commit message"""
     command = f"git log --pretty='format:%h (\"%s\")' -1 {commit}"
-    return run_git_command(command)
+    result, _ = run_git_command(command)
+    return result
 
 
 def valid_commit(commit):
@@ -362,7 +430,7 @@ def main():
     for file in files:
         try:
             check_per_file(file)
-        except GitCommandError as error:
+        except (GitCommandError, BaselineError) as error:
             logging.error("Cannot check %s: %s", file, error)
             success = False
     return 0 if success else 1
