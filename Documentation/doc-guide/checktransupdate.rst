@@ -10,10 +10,18 @@ the English counterpart.
 How it works
 ------------
 
-It uses ``git log`` command to track the latest English commit from the
-translation commit (order by author date) and the latest English commits
-from HEAD. If any differences occur, the file is considered as out-of-date,
-then commits that need to be updated will be collected and reported.
+The script searches the translated file's history, from newest to oldest, for
+a commit message recording the English commit used as its baseline.  Baseline
+markers such as ``Update to commit HASH`` are checked against the corresponding
+English file before being used.  Thus, later translation-only edits such as
+typo fixes do not make an outdated translation appear current.  For older
+translation histories without an explicit marker, the script falls back to
+inferring a baseline from author dates.
+
+After finding a valid baseline, the script reports non-merge commits which
+modified the English file between that baseline and HEAD.  Both translated
+files and translated directories can be supplied.  Explicit paths outside
+``Documentation/translations/<locale>/`` are rejected with an error.
 
 Features implemented
 
@@ -37,6 +45,9 @@ Samples
    This will print all the files that need to be updated in the zh_CN locale.
 -  ``tools/docs/checktransupdate.py Documentation/translations/zh_CN/dev-tools/testing-overview.rst``
    This will only print the status of the specified file.
+-  ``tools/docs/checktransupdate.py Documentation/translations/zh_CN/dev-tools``
+   This will recursively print the status of translated files in the specified
+   directory.
 
 Then the output is something like:
 
@@ -48,7 +59,3 @@ Then the output is something like:
     Documentation/translations/zh_CN/dev-tools/testing-overview.rst
     commit 42fb9cfd5b18 ("Documentation: dev-tools: Add link to RV docs")
     1 commits needs resolving in total
-
-Features to be implemented
-
-- files can be a folder instead of only a file

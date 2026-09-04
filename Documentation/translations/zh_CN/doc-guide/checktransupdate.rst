@@ -13,8 +13,14 @@
 工作原理
 ------------
 
-它使用 ``git log`` 命令来跟踪翻译提交的最新英文提交（按作者日期排序）和英文文档的
-最新提交。如果有任何差异，则该文件被认为是过期的，然后需要更新的提交将被收集并报告。
+该脚本从新到旧搜索翻译文件的提交历史，查找提交信息中记录的英文版本基线。
+脚本会根据对应的英文文件验证诸如 ``Update to commit HASH`` 这样的基线标记，
+因此，之后仅修改错别字等翻译内容的提交不会让过期翻译看起来已是最新版本。
+对于没有显式基线标记的旧翻译历史，脚本仍会按作者日期推断基线。
+
+找到有效基线后，脚本会报告从该基线到 HEAD 之间修改过英文文件的非合并提交。
+命令既接受翻译文件，也接受翻译目录；如果显式指定的路径不在
+``Documentation/translations/<locale>/`` 下，脚本会报错。
 
 实现的功能
 
@@ -38,6 +44,8 @@
    这将打印 zh_CN 语言中需要更新的所有文件。
 -  ``tools/docs/checktransupdate.py Documentation/translations/zh_CN/dev-tools/testing-overview.rst``
    这将只打印指定文件的状态。
+-  ``tools/docs/checktransupdate.py Documentation/translations/zh_CN/dev-tools``
+   这将递归打印指定目录中翻译文件的状态。
 
 然后输出类似如下的内容：
 
@@ -49,7 +57,3 @@
     Documentation/translations/zh_CN/dev-tools/testing-overview.rst
     commit 42fb9cfd5b18 ("Documentation: dev-tools: Add link to RV docs")
     1 commits needs resolving in total
-
-待实现的功能
-
-- 文件参数可以是文件夹而不仅仅是单个文件
