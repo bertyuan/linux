@@ -247,7 +247,13 @@ def get_origin_from_translation_history(origin_path, translation_path):
 
 def get_commits_count_between(opath, commit1, commit2):
     """Get the commits count between two commits for the specified file"""
-    command = f"git log --pretty=format:%H {commit1}...{commit2} -- {opath}"
+    if not is_ancestor(commit1, commit2):
+        raise BaselineError(
+            f"English baseline {commit1} is not an ancestor of {commit2}"
+        )
+    command = (
+        f"git log --no-merges --format=%H {commit1}..{commit2} -- {opath}"
+    )
     output, _ = run_git_command(command)
     result = output.split("\n")
     # filter out empty lines
@@ -262,11 +268,6 @@ def pretty_output(commit):
     return result
 
 
-def valid_commit(commit):
-    """Check if the commit is valid or not"""
-    msg = pretty_output(commit)
-    return "Merge tag" not in msg
-
 def check_per_file(file_path):
     """Check the translation status for the specified file"""
     opath = get_origin_path(file_path)
@@ -277,40 +278,42 @@ def check_per_file(file_path):
             "(expected Documentation/translations/<locale>/...)",
             file_path,
         )
-        return
+        return False
 
     if not os.path.isfile(opath):
         logging.error("Cannot find the origin path for %s", file_path)
-        return
+        return False
 
-    o_from_head = get_latest_commit_from(opath, "HEAD")
-    t_from_head = get_latest_commit_from(file_path, "HEAD")
+    try:
+        o_from_head = get_latest_commit_from(opath, "HEAD")
+        t_from_head = get_latest_commit_from(file_path, "HEAD")
 
-    if o_from_head is None or t_from_head is None:
-        logging.error("Cannot find the latest commit for %s", file_path)
-        return
+        if o_from_head is None or t_from_head is None:
+            logging.error("Cannot find the latest commit for %s", file_path)
+            return False
 
-    o_from_t = get_origin_from_translation_history(opath, file_path)
-    if o_from_t is None:
-        o_from_t = get_origin_from_trans_by_date(opath, t_from_head)
+        o_from_t = get_origin_from_translation_history(opath, file_path)
+        if o_from_t is None:
+            o_from_t = get_origin_from_trans_by_date(opath, t_from_head)
 
-    if o_from_t is None:
-        logging.error("Error: Cannot find the latest origin commit for %s", file_path)
-        return
+        if o_from_t is None:
+            logging.error(
+                "Error: Cannot find the latest origin commit for %s", file_path
+            )
+            return False
 
-    if o_from_head["hash"] == o_from_t["hash"]:
-        logging.debug("No update needed for %s", file_path)
-    else:
-        logging.info(file_path)
-        commits = get_commits_count_between(
-            opath, o_from_t["hash"], o_from_head["hash"]
-        )
-        count = 0
-        for commit in commits:
-            if valid_commit(commit):
+        if o_from_head["hash"] == o_from_t["hash"]:
+            logging.debug("No update needed for %s", file_path)
+        else:
+            commits = get_commits_count_between(opath, o_from_t["hash"], "HEAD")
+            logging.info(file_path)
+            for commit in commits:
                 logging.info("commit %s", pretty_output(commit))
-                count += 1
-        logging.info("%d commits needs resolving in total\n", count)
+            logging.info("%d commits needs resolving in total\n", len(commits))
+    except (GitCommandError, BaselineError) as error:
+        logging.error("Cannot check %s: %s", file_path, error)
+        return False
+    return True
 
 
 def valid_locales(locale):
@@ -470,11 +473,7 @@ def main():
 
     success = True
     for file in files:
-        try:
-            check_per_file(file)
-        except (GitCommandError, BaselineError) as error:
-            logging.error("Cannot check %s: %s", file, error)
-            success = False
+        success = check_per_file(file) and success
     return 0 if success else 1
 
 
