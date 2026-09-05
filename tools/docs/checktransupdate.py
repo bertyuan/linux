@@ -78,19 +78,18 @@ def parse_commit(result):
     """Parse the machine-readable output describing one commit."""
     if not result:
         return None
-    fields = result.split("\0", 2)
-    if len(fields) != 3:
+    fields = result.split("\0")
+    if len(fields) != 2:
         raise GitCommandError("Git returned malformed commit information")
     return {
         "hash": fields[0],
         "author_date": int(fields[1]),
-        "message": fields[2].splitlines(),
     }
 
 
 def get_latest_commit_from(file_path, commit):
     """Get the latest commit from the specified commit for the specified file"""
-    command = f"git log --format='%H%x00%at%x00%B' {commit} -1 -- {file_path}"
+    command = f"git log --format='%H%x00%at' {commit} -1 -- {file_path}"
     result, _ = run_git_command(command)
     parsed = parse_commit(result)
     if parsed is not None:
@@ -100,7 +99,7 @@ def get_latest_commit_from(file_path, commit):
 
 def get_commit(commit):
     """Get information about exactly the specified commit."""
-    command = f"git show -s --format='%H%x00%at%x00%B' {commit}"
+    command = f"git show -s --format='%H%x00%at' {commit}"
     result, _ = run_git_command(command)
     return parse_commit(result)
 
@@ -127,14 +126,27 @@ def get_translation_history(file_path):
     return history
 
 
-def get_origin_from_trans(origin_path, t_from_head):
+def get_origin_from_trans_by_date(origin_path, t_from_head):
     """Get the latest origin commit from the translation commit"""
-    o_from_t = get_latest_commit_from(origin_path, t_from_head["hash"])
-    while o_from_t is not None and o_from_t["author_date"] > t_from_head["author_date"]:
-        o_from_t = get_latest_commit_from(origin_path, o_from_t["hash"] + "^")
-    if o_from_t is not None:
-        logging.debug("tracked origin commit id: %s", o_from_t["hash"])
-    return o_from_t
+    command = (
+        f"git log -z --format='%H%x00%at' "
+        f"{t_from_head['hash']} -- {origin_path}"
+    )
+    result, _ = run_git_command(command)
+    fields = result.split("\0")
+    if fields[-1] == "":
+        fields.pop()
+    if len(fields) % 2:
+        raise GitCommandError("Git returned malformed origin history")
+
+    for index in range(0, len(fields), 2):
+        if int(fields[index + 1]) <= t_from_head["author_date"]:
+            logging.debug("tracked origin commit id: %s", fields[index])
+            return {
+                "hash": fields[index],
+                "author_date": int(fields[index + 1]),
+            }
+    return None
 
 
 BASELINE_RE = re.compile(
@@ -280,7 +292,7 @@ def check_per_file(file_path):
 
     o_from_t = get_origin_from_translation_history(opath, file_path)
     if o_from_t is None:
-        o_from_t = get_origin_from_trans(opath, t_from_head)
+        o_from_t = get_origin_from_trans_by_date(opath, t_from_head)
 
     if o_from_t is None:
         logging.error("Error: Cannot find the latest origin commit for %s", file_path)
