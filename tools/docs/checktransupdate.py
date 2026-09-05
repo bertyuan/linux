@@ -27,6 +27,7 @@ commit 42fb9cfd5b18 ("Documentation: dev-tools: Add link to RV docs")
 
 import os
 import re
+import sys
 import time
 import logging
 from argparse import ArgumentParser, ArgumentTypeError, BooleanOptionalAction
@@ -35,11 +36,16 @@ from datetime import datetime
 
 def get_origin_path(file_path):
     """Get the origin path from the translation path"""
-    paths = file_path.split("/")
-    tidx = paths.index("translations")
-    opaths = paths[:tidx]
-    opaths += paths[tidx + 2 :]
-    return "/".join(opaths)
+    paths = os.path.normpath(file_path).split(os.sep)
+    if len(paths) < 4 or paths[:2] != ["Documentation", "translations"]:
+        return None
+    return os.path.join("Documentation", *paths[3:])
+
+
+def is_translation_path(file_path):
+    """Return whether a path is within a documentation translation locale."""
+    paths = os.path.normpath(file_path).split(os.sep)
+    return len(paths) >= 3 and paths[:2] == ["Documentation", "translations"]
 
 
 def get_latest_commit_from(file_path, commit):
@@ -131,6 +137,14 @@ def valid_commit(commit):
 def check_per_file(file_path):
     """Check the translation status for the specified file"""
     opath = get_origin_path(file_path)
+
+    if opath is None:
+        logging.error(
+            "Invalid translation path: %s "
+            "(expected Documentation/translations/<locale>/...)",
+            file_path,
+        )
+        return
 
     if not os.path.isfile(opath):
         logging.error("Cannot find the origin path for %s", file_path)
@@ -299,11 +313,22 @@ def main():
         # check if the files are directories or files
         new_files = []
         for file in files:
+            relative_file = os.path.relpath(os.path.abspath(file), linux_path)
+            if not is_translation_path(relative_file):
+                logging.error(
+                    "Invalid translation path: %s "
+                    "(expected Documentation/translations/<locale>/...)",
+                    file,
+                )
+                return 1
             if os.path.isfile(file):
                 new_files.append(file)
             elif os.path.isdir(file):
                 # for directories, list all files in the directory and its subfolders
                 new_files.extend(list_files_with_excluding_folders(file, [], "rst"))
+            else:
+                logging.error("Cannot find input path: %s", file)
+                return 1
         files = new_files
 
     files = list(map(lambda x: os.path.relpath(os.path.abspath(x), linux_path), files))
@@ -316,4 +341,4 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())
