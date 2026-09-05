@@ -3,10 +3,10 @@
 
 """
 This script helps track the translation status of the documentation
-in different locales, e.g., zh_CN. More specially, it uses `git log`
-commit to find the latest english commit from the translation commit
-(order by author date) and the latest english commits from HEAD. If
-differences occur, report the file and commits that need to be updated.
+in different locales, e.g., zh_CN. It uses explicit baseline markers
+from the translation's Git history when available, with author-date
+inference as a fallback. If the English file has changed since the
+baseline, it reports the commits that need to be translated.
 
 The usage is as follows:
 - tools/docs/checktransupdate.py -l zh_CN
@@ -105,6 +105,28 @@ def get_commit(commit):
     return parse_commit(result)
 
 
+def get_translation_history(file_path):
+    """Get commits and messages touching a translation, newest first."""
+    command = f"git log -z --format='%H%x00%B' HEAD -- {file_path}"
+    result, _ = run_git_command(command)
+    if not result:
+        return []
+
+    fields = result.split("\0")
+    if fields[-1] == "":
+        fields.pop()
+    if len(fields) % 2:
+        raise GitCommandError("Git returned malformed translation history")
+
+    history = []
+    for index in range(0, len(fields), 2):
+        history.append({
+            "hash": fields[index],
+            "message": fields[index + 1].splitlines(),
+        })
+    return history
+
+
 def get_origin_from_trans(origin_path, t_from_head):
     """Get the latest origin commit from the translation commit"""
     o_from_t = get_latest_commit_from(origin_path, t_from_head["hash"])
@@ -173,33 +195,42 @@ def select_latest_baseline(candidates, translation_commit, origin_path):
     return latest[0]
 
 
-def get_origin_from_trans_smartly(origin_path, t_from_head):
-    """Get a validated explicit baseline from a translation commit."""
-    candidates = extract_baseline_candidates(t_from_head["message"])
-    valid_candidates = []
-    for candidate in candidates:
-        try:
-            resolved = resolve_commit(candidate)
-        except GitCommandError as error:
-            logging.warning("Rejecting baseline %s: %s", candidate, error)
+def get_origin_from_translation_history(origin_path, translation_path):
+    """Find the newest valid explicit baseline in translation history."""
+    for translation_commit in get_translation_history(translation_path):
+        candidates = extract_baseline_candidates(translation_commit["message"])
+        if not candidates:
             continue
-        if not candidate_modifies_origin(resolved, origin_path):
-            logging.debug(
-                "Rejecting baseline %s: it did not modify %s",
-                candidate, origin_path,
-            )
+
+        valid_candidates = []
+        for candidate in candidates:
+            try:
+                resolved = resolve_commit(candidate)
+            except GitCommandError as error:
+                logging.warning(
+                    "Rejecting baseline %s from translation commit %s: %s",
+                    candidate, translation_commit["hash"], error,
+                )
+                continue
+            if not candidate_modifies_origin(resolved, origin_path):
+                logging.debug(
+                    "Rejecting baseline %s from translation commit %s: "
+                    "it did not modify %s",
+                    candidate, translation_commit["hash"], origin_path,
+                )
+                continue
+            if resolved not in valid_candidates:
+                valid_candidates.append(resolved)
+
+        if not valid_candidates:
             continue
-        if resolved not in valid_candidates:
-            valid_candidates.append(resolved)
 
-    if not valid_candidates:
-        return None
-
-    baseline = select_latest_baseline(
-        valid_candidates, t_from_head["hash"], origin_path
-    )
-    logging.debug("tracked explicit origin commit id: %s", baseline)
-    return get_commit(baseline)
+        baseline = select_latest_baseline(
+            valid_candidates, translation_commit["hash"], origin_path
+        )
+        logging.debug("tracked explicit origin commit id: %s", baseline)
+        return get_commit(baseline)
+    return None
 
 
 def get_commits_count_between(opath, commit1, commit2):
@@ -247,8 +278,7 @@ def check_per_file(file_path):
         logging.error("Cannot find the latest commit for %s", file_path)
         return
 
-    o_from_t = get_origin_from_trans_smartly(opath, t_from_head)
-    # notice, o_from_t from get_*_smartly() is always more accurate than from get_*()
+    o_from_t = get_origin_from_translation_history(opath, file_path)
     if o_from_t is None:
         o_from_t = get_origin_from_trans(opath, t_from_head)
 
