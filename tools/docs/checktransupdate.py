@@ -172,7 +172,7 @@ def valid_locales(locale):
     script_path = os.path.dirname(os.path.abspath(__file__))
     linux_path = os.path.join(script_path, "../..")
     if not os.path.isdir(f"{linux_path}/Documentation/translations/{locale}"):
-        raise ArgumentTypeError("Invalid locale: {locale}")
+        raise ArgumentTypeError(f"Invalid locale: {locale}")
     return locale
 
 
