@@ -270,7 +270,7 @@ def main():
 
     # Configure logging based on the --log argument
     log_level = getattr(logging, args.log.upper(), logging.INFO)
-    config_logging(log_level)
+    config_logging(log_level, args.logfile)
 
     # Get files related to linux path
     files = args.files
