@@ -34,6 +34,29 @@ from argparse import ArgumentParser, ArgumentTypeError, BooleanOptionalAction
 from datetime import datetime
 
 
+class GitCommandError(RuntimeError):
+    """An error reported by a Git command."""
+
+
+def run_git_command(command):
+    """Run a Git command and return its output."""
+    logging.debug(command)
+    pipe = os.popen(f"{command} 2>&1")
+    result = pipe.read()
+    status = pipe.close()
+    exit_code = 0 if status is None else os.waitstatus_to_exitcode(status)
+    if exit_code:
+        details = result.strip()
+        if details:
+            raise GitCommandError(
+                f"Git command failed with exit code {exit_code}: {details}"
+            )
+        raise GitCommandError(
+            f"Git command failed with exit code {exit_code}: {command}"
+        )
+    return result
+
+
 def get_origin_path(file_path):
     """Get the origin path from the translation path"""
     paths = os.path.normpath(file_path).split(os.sep)
@@ -51,9 +74,7 @@ def is_translation_path(file_path):
 def get_latest_commit_from(file_path, commit):
     """Get the latest commit from the specified commit for the specified file"""
     command = f"git log --pretty=format:%H%n%aD%n%cD%n%n%B {commit} -1 -- {file_path}"
-    logging.debug(command)
-    pipe = os.popen(command)
-    result = pipe.read()
+    result = run_git_command(command)
     result = result.split("\n")
     if len(result) <= 1:
         return None
@@ -113,9 +134,7 @@ def get_origin_from_trans_smartly(origin_path, t_from_head):
 def get_commits_count_between(opath, commit1, commit2):
     """Get the commits count between two commits for the specified file"""
     command = f"git log --pretty=format:%H {commit1}...{commit2} -- {opath}"
-    logging.debug(command)
-    pipe = os.popen(command)
-    result = pipe.read().split("\n")
+    result = run_git_command(command).split("\n")
     # filter out empty lines
     result = list(filter(lambda x: x != "", result))
     return result
@@ -124,9 +143,7 @@ def get_commits_count_between(opath, commit1, commit2):
 def pretty_output(commit):
     """Pretty print the commit message"""
     command = f"git log --pretty='format:%h (\"%s\")' -1 {commit}"
-    logging.debug(command)
-    pipe = os.popen(command)
-    return pipe.read()
+    return run_git_command(command)
 
 
 def valid_commit(commit):
@@ -336,8 +353,14 @@ def main():
     # cd to linux root directory
     os.chdir(linux_path)
 
+    success = True
     for file in files:
-        check_per_file(file)
+        try:
+            check_per_file(file)
+        except GitCommandError as error:
+            logging.error("Cannot check %s: %s", file, error)
+            success = False
+    return 0 if success else 1
 
 
 if __name__ == "__main__":
