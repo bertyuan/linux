@@ -31,7 +31,6 @@ import sys
 import time
 import logging
 from argparse import ArgumentParser, ArgumentTypeError, BooleanOptionalAction
-from datetime import datetime
 
 
 class GitCommandError(RuntimeError):
@@ -71,22 +70,28 @@ def is_translation_path(file_path):
     return len(paths) >= 3 and paths[:2] == ["Documentation", "translations"]
 
 
+def parse_commit(result):
+    """Parse the machine-readable output describing one commit."""
+    if not result:
+        return None
+    fields = result.split("\0", 2)
+    if len(fields) != 3:
+        raise GitCommandError("Git returned malformed commit information")
+    return {
+        "hash": fields[0],
+        "author_date": int(fields[1]),
+        "message": fields[2].splitlines(),
+    }
+
+
 def get_latest_commit_from(file_path, commit):
     """Get the latest commit from the specified commit for the specified file"""
-    command = f"git log --pretty=format:%H%n%aD%n%cD%n%n%B {commit} -1 -- {file_path}"
+    command = f"git log --format='%H%x00%at%x00%B' {commit} -1 -- {file_path}"
     result = run_git_command(command)
-    result = result.split("\n")
-    if len(result) <= 1:
-        return None
-
-    logging.debug("Result: %s", result[0])
-
-    return {
-        "hash": result[0],
-        "author_date": datetime.strptime(result[1], "%a, %d %b %Y %H:%M:%S %z"),
-        "commit_date": datetime.strptime(result[2], "%a, %d %b %Y %H:%M:%S %z"),
-        "message": result[4:],
-    }
+    parsed = parse_commit(result)
+    if parsed is not None:
+        logging.debug("Result: %s", parsed["hash"])
+    return parsed
 
 
 def get_origin_from_trans(origin_path, t_from_head):
