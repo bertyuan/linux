@@ -39,12 +39,16 @@ TODOList:
 
 開發人員使用的內核內部交互接口手冊。
 
+.. toctree::
+   :maxdepth: 1
+
+   subsystem-apis
+
 TODOList:
 
 * core-api/index
 * driver-api/index
 * 內核中的鎖 <locking/index>
-* subsystem-apis
 
 開發工具和流程
 --------------
