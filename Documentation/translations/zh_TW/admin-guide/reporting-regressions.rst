@@ -2,6 +2,7 @@
 .. 【重分發信息參見本文件結尾】
 
 .. include:: ../disclaimer-zh_TW.rst
+.. include:: ../unmaintained-zh_TW.rst
 
 :Original: Documentation/admin-guide/reporting-regressions.rst
 

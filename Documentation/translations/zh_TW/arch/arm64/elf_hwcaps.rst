@@ -1,6 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
 .. include:: ../../disclaimer-zh_TW.rst
+.. include:: ../../unmaintained-zh_TW.rst
 
 :Original: :ref:`Documentation/arch/arm64/elf_hwcaps.rst <elf_hwcaps_index>`
 

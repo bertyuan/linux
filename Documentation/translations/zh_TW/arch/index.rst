@@ -1,5 +1,7 @@
 .. SPDX-License-Identifier: GPL-2.0
 
+.. include:: ../unmaintained-zh_TW.rst
+
 :Original: Documentation/arch/index.rst
 
 處理器體系結構

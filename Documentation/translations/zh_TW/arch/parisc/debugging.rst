@@ -1,4 +1,5 @@
 .. include:: ../../disclaimer-zh_TW.rst
+.. include:: ../../unmaintained-zh_TW.rst
 
 :Original: Documentation/arch/parisc/debugging.rst
 

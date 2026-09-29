@@ -1,4 +1,6 @@
-﻿:Original: Documentation/dev-tools/sparse.rst
+﻿.. include:: ../unmaintained-zh_TW.rst
+
+:Original: Documentation/dev-tools/sparse.rst
 
 Chinese translated version of Documentation/dev-tools/sparse.rst
 

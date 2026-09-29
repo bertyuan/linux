@@ -3,6 +3,7 @@
 .. _tw_magicnumbers:
 
 .. include:: ../disclaimer-zh_TW.rst
+.. include:: ../unmaintained-zh_TW.rst
 
 :Original: :ref:`Documentation/staging/magic-number.rst <magicnumbers>`
 
