@@ -2,14 +2,6 @@
 
 :Original: Documentation/core-api/assoc_array.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
-
 .. _cn_core-api_assoc_array:
 
 ==================

@@ -6,14 +6,6 @@ Copyright 2006 Bob Copeland <me@bobcopeland.com>
 
 :Original: Documentation/dev-tools/sparse.rst
 
-:翻译:
-
- Li Yang <leoyang.li@nxp.com>
-
-:校译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 .. _cn_sparse:
 
 Sparse

@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/team.rst
 
-:翻译:
-
-	陈思为 Siwei Chen <businiaoanka@anka1.top>
-
 ====================
 Team（网络接口聚合）
 ====================

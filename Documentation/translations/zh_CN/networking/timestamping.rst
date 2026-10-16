@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/timestamping.rst
 
-:翻译:
-
-   王亚鑫 Wang Yaxin <wang.yaxin@zte.com.cn>
-
 ======
 时间戳
 ======

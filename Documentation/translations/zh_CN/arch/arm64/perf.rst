@@ -4,8 +4,6 @@
 
 :Original: :ref:`Documentation/arch/arm64/perf.rst <perf_index>`
 
-Translator: Bailu Lin <bailu.lin@vivo.com>
-
 =============
 Perf 事件属性
 =============

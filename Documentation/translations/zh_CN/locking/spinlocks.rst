@@ -3,10 +3,6 @@
 
 :Original: Documentation/locking/spinlocks.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ==========
 加锁的教训
 ==========

@@ -2,12 +2,6 @@
 
 :Original: Documentation/mm/hugetlbfs_reserv.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
 ==============
 Hugetlbfs 预留
 ==============

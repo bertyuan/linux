@@ -2,15 +2,6 @@
 
 :Original: Documentation/scheduler/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
-:校译:
-
-
-
 ===============
 Linux调度器
 ===============

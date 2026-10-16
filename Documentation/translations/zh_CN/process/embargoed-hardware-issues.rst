@@ -1,7 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/embargoed-hardware-issues.rst <embargoed_hardware_issues>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
 
 被限制的硬件问题
 ================

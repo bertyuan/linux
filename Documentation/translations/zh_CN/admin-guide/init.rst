@@ -2,10 +2,6 @@
 
 :Original: :doc:`../../../admin-guide/init`
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 解释“No working init found.”启动挂起消息
 =========================================
 

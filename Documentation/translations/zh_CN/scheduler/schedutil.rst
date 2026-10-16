@@ -3,10 +3,6 @@
 
 :Original: Documentation/scheduler/schedutil.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 =========
 Schedutil
 =========

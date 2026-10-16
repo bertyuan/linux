@@ -4,12 +4,6 @@
 
 :Original: Documentation/driver-api/gpio/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
 =======================
 通用型输入/输出（GPIO）
 =======================

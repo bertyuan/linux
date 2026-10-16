@@ -2,14 +2,6 @@
 
 :Original: :ref:`Documentation/process/5.Posting.rst <development_posting>`
 
-:Translator:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. _cn_development_posting:
 
 发布补丁

@@ -3,14 +3,6 @@
 
 :Original: Documentation/block/blk-mq.rst
 
-:翻译:
-
- 柯子杰 kezijie <kezijie@leap-io-kernel.com>
-
-:校译:
-
-
-
 ================================================
 多队列块设备 I/O 排队机制 (blk-mq)
 ================================================

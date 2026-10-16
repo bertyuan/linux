@@ -3,14 +3,6 @@
 
 :Original: Documentation/scsi/scsi.rst
 
-:翻译:
-
- 郝栋栋 doubled <doubled@leap-io-kernel.com>
-
-:校译:
-
-
-
 ==============
 SCSI子系统文档
 ==============

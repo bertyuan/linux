@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/netif-msg.rst
 
-:翻译:
-
-   王亚鑫 Wang Yaxin <wang.yaxin@zte.com.cn>
-
 ================
 网络接口消息级别
 ================

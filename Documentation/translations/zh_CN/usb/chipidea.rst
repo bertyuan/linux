@@ -3,13 +3,6 @@
 
 :Original: Documentation/usb/chipidea.rst
 
-:翻译:
-
- 白钶凡 Kefan Bai <baikefan@leap-io-kernel.com>
-
-:校译:
-
-
 =============================
 ChipIdea 高速双角色控制器驱动
 =============================

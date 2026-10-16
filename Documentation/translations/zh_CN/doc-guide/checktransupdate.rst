@@ -4,8 +4,6 @@
 
 :Original: Documentation/doc-guide/checktransupdate.rst
 
-:译者: 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
-
 检查翻译更新
 
 这个脚本帮助跟踪不同语言的文档翻译状态，即文档是否与对应的英文版本保持更新。

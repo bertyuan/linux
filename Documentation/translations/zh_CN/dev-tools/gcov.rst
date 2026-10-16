@@ -1,7 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/dev-tools/gcov.rst
-:Translator: 赵军奎 Bernard Zhao <bernard@vivo.com>
 
 在Linux内核里使用gcov做代码覆盖率检查
 =====================================

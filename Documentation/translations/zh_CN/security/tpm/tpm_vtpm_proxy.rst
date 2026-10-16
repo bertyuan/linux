@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/tpm/tpm_vtpm_proxy.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ==========================
 Linux容器的虚拟TPM代理驱动
 ==========================

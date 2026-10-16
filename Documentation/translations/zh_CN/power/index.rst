@@ -3,10 +3,6 @@
 
 :Original: Documentation/power/index.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ========
 电源管理
 ========

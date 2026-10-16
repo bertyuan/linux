@@ -4,11 +4,6 @@
 
 :Original: :doc:`../../../process/security-bugs`
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
- 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
-
 安全缺陷
 =========
 

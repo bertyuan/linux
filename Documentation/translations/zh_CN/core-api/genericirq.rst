@@ -2,14 +2,6 @@
 
 :Original: Documentation/core-api/genericirq.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. include:: <isonum.txt>
 
 .. _cn_core-api_genericirq:

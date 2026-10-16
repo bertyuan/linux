@@ -3,13 +3,6 @@
 
 :Original: Documentation/devicetree/kernel-api.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 =================
 内核中的设备树API
 =================

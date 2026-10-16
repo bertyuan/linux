@@ -3,10 +3,6 @@
 
 :Original: Documentation/scheduler/sched-nice-design.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 =====================
 调度器nice值设计
 =====================

@@ -3,10 +3,6 @@
 
 :Original: Documentation/staging/index.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 未分类文档
 ==========
 

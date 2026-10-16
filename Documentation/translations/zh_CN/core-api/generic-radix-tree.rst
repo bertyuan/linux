@@ -4,10 +4,6 @@
 
 :Original: Documentation/core-api/generic-radix-tree.rst
 
-:翻译:
-
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
 ===================
 通用基数树/稀疏数组
 ===================

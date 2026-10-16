@@ -4,14 +4,6 @@
 
 :Original: Documentation/filesystems/gfs2.rst
 
-:翻译:
-
-   邵明寅 Shao Mingyin <shao.mingyin@zte.com.cn>
-
-:校译:
-
-   杨涛 yang tao <yang.tao172@zte.com.cn>
-
 =====================================
 全局文件系统 2 (Global File System 2)
 =====================================

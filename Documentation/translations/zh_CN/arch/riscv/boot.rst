@@ -3,10 +3,6 @@
 
 :Original: Documentation/arch/riscv/boot.rst
 
-:翻译:
-
- 龙进 Jin Long <longjin@dragonos.org>
-
 ========================
 RISC-V内核启动要求和限制
 ========================

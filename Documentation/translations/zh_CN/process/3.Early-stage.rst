@@ -2,14 +2,6 @@
 
 :Original: :ref:`Documentation/process/3.Early-stage.rst <development_early_stage>`
 
-:Translator:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. _cn_development_early_stage:
 
 早期规划

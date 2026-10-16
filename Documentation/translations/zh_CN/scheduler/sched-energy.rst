@@ -3,10 +3,6 @@
 
 :Original: Documentation/scheduler/sched-energy.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ============
 能量感知调度
 ============

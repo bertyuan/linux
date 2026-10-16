@@ -4,16 +4,6 @@
 
 :Original: Documentation/core-api/watch_queue.rst
 
-:翻译:
-
-周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
-司延腾 Yanteng Si <siyanteng@loongson.cn>
-吴想成 Wu Xiangcheng <bobwxc@email.cn>
-
-
 ============
 通用通知机制
 ============

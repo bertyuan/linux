@@ -8,17 +8,6 @@
 Debugfs
 =======
 
-译者
-::
-
-	中文版维护者： 罗楚成 Chucheng Luo <luochucheng@vivo.com>
-	中文版翻译者： 罗楚成 Chucheng Luo <luochucheng@vivo.com>
-	中文版校译者:  罗楚成 Chucheng Luo <luochucheng@vivo.com>
-
-
-
-版权所有2020 罗楚成 <luochucheng@vivo.com>
-
 
 Debugfs是内核开发人员在用户空间获取信息的简单方法。与/proc不同，proc只提供进程
 信息。也不像sysfs,具有严格的“每个文件一个值“的规则。debugfs根本没有规则,开发

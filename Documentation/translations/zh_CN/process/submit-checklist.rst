@@ -1,9 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/process/submit-checklist.rst
-:Translator:
- - Alex Shi <alexs@kernel.org>
- - Wu XiangCheng <bobwxc@email.cn>
 
 .. _cn_submitchecklist:
 

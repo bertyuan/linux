@@ -4,8 +4,6 @@
 
 :Original: Documentation/filesystems/tmpfs.rst
 
-translated by Wang Qing<wangqing@vivo.com>
-
 =====
 Tmpfs
 =====

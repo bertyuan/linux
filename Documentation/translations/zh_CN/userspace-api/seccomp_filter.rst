@@ -3,10 +3,6 @@
 
 :Original: Documentation/userspace-api/seccomp_filter.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 ==================================
 Seccomp BPF (基于过滤器的安全计算)
 ==================================

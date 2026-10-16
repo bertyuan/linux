@@ -3,10 +3,6 @@
 
 :Original: Documentation/rust/testing.rst
 
-:翻译:
-
- 郭杰 Ben Guo <benx.guo@gmail.com>
-
 测试
 ====
 

@@ -2,14 +2,6 @@
 
 :Original: Documentation/scheduler/sched-bwc.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
-
 ============
 CFS 带宽控制
 ============

@@ -3,13 +3,6 @@
 
 :Original: Documentation/usb/acm.rst
 
-:翻译:
-
- 白钶凡 Kefan Bai <baikefan@leap-io-kernel.com>
-
-:校译:
-
-
 ====================
 Linux ACM 驱动 v0.16
 ====================

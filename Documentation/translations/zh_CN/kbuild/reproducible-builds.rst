@@ -4,8 +4,6 @@
 
 :Original: Documentation/kbuild/reproducible-builds.rst
 
-:Translator: 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
-
 ============
 可重现的构建
 ============

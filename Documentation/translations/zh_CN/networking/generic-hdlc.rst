@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/generic-hdlc.rst
 
-:翻译:
-
-   孙渔喜 Sun yuxi <sun.yuxi@zte.com.cn>
-
 ==========
 通用HDLC层
 ==========

@@ -3,13 +3,6 @@
 
 :Original: Documentation/usb/authorization.rst
 
-:翻译:
-
- 白钶凡 Kefan Bai <baikefan@leap-io-kernel.com>
-
-:校译:
-
-
 ===========================
 允许或禁止 USB 设备接入系统
 ===========================

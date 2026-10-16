@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/IMA-templates.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ===============
 IMA模板管理机制
 ===============

@@ -3,10 +3,6 @@
 
 :Original: Documentation/core-api/rbtree.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 =========================
 Linux中的红黑树（rbtree）
 =========================

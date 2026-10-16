@@ -3,13 +3,6 @@
 
 :Original: Documentation/PCI/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 ===================
 Linux PCI总线子系统
 ===================

@@ -2,10 +2,6 @@
 
 :Original: Documentation/iio/ep93xx_adc.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 .. _cn_iio_ep93xx_adc:
 
 ==================================

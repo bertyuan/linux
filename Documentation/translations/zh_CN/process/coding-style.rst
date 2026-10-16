@@ -4,18 +4,6 @@
 
 .. _cn_codingstyle:
 
-:译者:
- - 张乐 Zhang Le <r0bertz@gentoo.org>
- - Andy Deng <theandy.deng@gmail.com>
- - 吴想成 <bobwxc@email.cn>
-
-:校译:
- - 王聪 Wang Cong <xiyou.wangcong@gmail.com>
- - wheelz <kernel.zeng@gmail.com>
- - 管旭东 Xudong Guan <xudong.guan@gmail.com>
- - Li Zefan <lizf@cn.fujitsu.com>
- - Wang Chen <wangchen@cn.fujitsu.com>
-
 Linux 内核代码风格
 ==================
 

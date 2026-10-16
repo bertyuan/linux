@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/driver.rst
 
-:翻译:
-
-	陈思为 Siwei Chen <businiaoanka@anka1.top>
-
 ================
 Softnet 驱动问题
 ================

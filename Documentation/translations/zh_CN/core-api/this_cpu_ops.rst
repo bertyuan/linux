@@ -4,14 +4,6 @@
 
 :Original: Documentation/core-api/this_cpu_ops.rst
 
-:翻译:
-
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
- 吴想成 Wu Xiangcheng <bobwxc@email.cn>
-
 ============
 this_cpu操作
 ============

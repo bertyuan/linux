@@ -2,14 +2,6 @@
 
 :Original: Documentation/staging/magic-number.rst
 
-:翻译:
-
- 贾威威 Jia Wei Wei <harryxiyou@gmail.com>
-
-:校译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 Linux 魔术数
 ============
 

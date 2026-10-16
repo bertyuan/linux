@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/kbuild/gcc-plugins.rst
-:Translator: 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
 
 ================
 GCC 插件基础设施

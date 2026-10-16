@@ -1,13 +1,5 @@
 :Original: Documentation/mm/mmu_notifier.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
-
 什么时候需要页表锁内通知？
 ==========================
 

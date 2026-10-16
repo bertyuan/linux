@@ -2,8 +2,6 @@
 
 :Original: Documentation/doc-guide/kernel-doc.rst
 
-:译者: 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 编写kernel-doc注释
 ==================
 

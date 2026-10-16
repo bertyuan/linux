@@ -3,10 +3,6 @@
 
 :Original: Documentation/userspace-api/accelerators/ocxl.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 =====================================
 OpenCAPI （开放相干加速器处理器接口）
 =====================================

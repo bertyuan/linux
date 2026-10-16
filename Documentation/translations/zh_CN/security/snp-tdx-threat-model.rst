@@ -3,10 +3,6 @@
 
 :Original: Documentation/security/snp-tdx-threat-model.rst
 
-:翻译:
-
- 毛玉贤 Yuxian Mao <maoyuxian@cqsoftware.com.cn>
-
 ==========================
 Linux中x86虚拟化的机密计算
 ==========================

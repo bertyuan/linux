@@ -3,10 +3,6 @@
 
 :Original: Documentation/rust/coding-guidelines.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 编码指南
 ========
 

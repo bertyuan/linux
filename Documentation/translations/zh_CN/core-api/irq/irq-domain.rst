@@ -2,11 +2,6 @@
 
 :Original: Documentation/core-api/irq/irq-domain.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
 .. _cn_irq-domain.rst:
 
 =======================

@@ -2,14 +2,6 @@
 
 :Original: :ref:`Documentation/process/6.Followthrough.rst <development_followthrough>`
 
-:Translator:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. _cn_development_followthrough:
 
 跟进

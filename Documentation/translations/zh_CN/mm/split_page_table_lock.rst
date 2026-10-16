@@ -1,12 +1,5 @@
 :Original: Documentation/mm/split_page_table_lock.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 =================================
 分页表锁（split page table lock）
 =================================

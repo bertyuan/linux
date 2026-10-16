@@ -5,10 +5,6 @@
 
 :Original: Documentation/security/landlock.rst
 
-:翻译:
-
- 毛玉贤 Yuxian Mao <maoyuxian@cqsoftware.com.cn>
-
 ======================
 Landlock LSM: 内核文档
 ======================

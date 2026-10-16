@@ -4,8 +4,6 @@
 
 :Original: Documentation/doc-guide/parse-headers.rst
 
-:译者: 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 =====================
 包含用户空间API头文件
 =====================

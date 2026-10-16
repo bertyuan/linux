@@ -2,12 +2,6 @@
 
 :Original: Documentation/mm/hmm.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
 ==================
 异构内存管理 (HMM)
 ==================

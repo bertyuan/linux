@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/credentials.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 =============
 Linux中的凭据
 =============

@@ -2,10 +2,6 @@
 
 :Original: Documentation/mm/ksm.rst
 
-:翻译:
-
-   徐鑫 xu xin <xu.xin16@zte.com.cn>
-
 ============
 内核同页合并
 ============

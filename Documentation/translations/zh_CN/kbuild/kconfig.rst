@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/kbuild/kconfig.rst
-:Translator: 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
 
 ================
 配置目标和编辑器

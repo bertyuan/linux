@@ -1,7 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/accounting/psi.rst
-:Translator: Yang Yang <yang.yang29@zte.com.cn>
 
 .. _cn_psi.rst:
 

@@ -1,13 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/8.Conclusion.rst <development_conclusion>`
-:Translator:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
 
 .. _cn_development_conclusion:
 

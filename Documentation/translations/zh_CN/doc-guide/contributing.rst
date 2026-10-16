@@ -4,8 +4,6 @@
 
 :Original: Documentation/doc-guide/contributing.rst
 
-:译者: 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 如何帮助改进内核文档
 ====================
 

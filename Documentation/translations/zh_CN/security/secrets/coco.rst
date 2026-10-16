@@ -3,10 +3,6 @@
 
 :Original: Documentation/security/secrets/coco.rst
 
-:翻译:
-
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ============
 机密计算密钥
 ============

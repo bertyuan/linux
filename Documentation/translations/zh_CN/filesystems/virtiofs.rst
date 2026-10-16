@@ -4,13 +4,6 @@
 
 :Original: :ref:`Documentation/filesystems/virtiofs.rst <virtiofs_index>`
 
-译者
-::
-
-	中文版维护者： 王文虎 Wang Wenhu <wenhu.wang@vivo.com>
-	中文版翻译者： 王文虎 Wang Wenhu <wenhu.wang@vivo.com>
-	中文版校译者： 王文虎 Wang Wenhu <wenhu.wang@vivo.com>
-
 ===========================================
 virtiofs: virtio-fs 主机<->客机共享文件系统
 ===========================================

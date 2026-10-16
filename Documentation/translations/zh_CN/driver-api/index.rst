@@ -4,12 +4,6 @@
 
 :Original: Documentation/driver-api/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
 ========================
 Linux驱动实现者的API指南
 ========================

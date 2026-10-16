@@ -3,10 +3,6 @@
 
 :Original: Documentation/scheduler/sched-stats.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ==============
 调度器统计数据
 ==============

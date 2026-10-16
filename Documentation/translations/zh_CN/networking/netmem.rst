@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/netmem.rst
 
-:翻译:
-
-   王亚鑫 Wang Yaxin <wang.yaxin@zte.com.cn>
-
 ==================
 网络驱动支持Netmem
 ==================

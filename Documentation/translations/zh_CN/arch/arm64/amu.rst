@@ -2,8 +2,6 @@
 
 :Original: :ref:`Documentation/arch/arm64/amu.rst <amu_index>`
 
-Translator: Bailu Lin <bailu.lin@vivo.com>
-
 ==================================
 AArch64 Linux 中扩展的活动监控单元
 ==================================

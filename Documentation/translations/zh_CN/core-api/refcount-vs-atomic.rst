@@ -2,10 +2,6 @@
 
 :Original: Documentation/core-api/refcount-vs-atomic.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 .. _cn_refcount-vs-atomic:
 
 =======================================

@@ -3,12 +3,6 @@
 
 :Original: Documentation/block/data-integrity.rst
 
-:翻译:
-
- 柯子杰 kezijie <kezijie@leap-io-kernel.com>
-
-:校译:
-
 ==========
 数据完整性
 ==========

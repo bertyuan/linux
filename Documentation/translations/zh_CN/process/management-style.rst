@@ -1,7 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/management-style.rst <managementstyle>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
 
 .. _cn_managementstyle:
 

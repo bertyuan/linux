@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/lsm-development.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 =================
 Linux安全模块开发
 =================

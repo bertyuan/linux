@@ -4,10 +4,6 @@
 
 :Original: Documentation/filesystems/dnotify.rst
 
-:翻译:
-
-   王龙杰 Wang Longjie <wang.longjie1@zte.com.cn>
-
 ==============
 Linux 目录通知
 ==============

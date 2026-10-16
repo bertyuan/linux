@@ -4,10 +4,6 @@
 
 :Original: Documentation/filesystems/inotify.rst
 
-:翻译:
-
-   王龙杰 Wang Longjie <wang.longjie1@zte.com.cn>
-
 ==========================================
 Inotify - 一个强大且简单的文件变更通知系统
 ==========================================

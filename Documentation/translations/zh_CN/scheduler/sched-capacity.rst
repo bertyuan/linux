@@ -3,14 +3,6 @@
 
 :Original: Documentation/scheduler/sched-capacity.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
-:校译:
-
-  时奎亮 Alex Shi <alexs@kernel.org>
-
 =============
 算力感知调度
 =============

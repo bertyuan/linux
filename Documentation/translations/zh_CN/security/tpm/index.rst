@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/tpm/index.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ================
 可信平台模块文档
 ================
