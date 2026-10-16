@@ -2,16 +2,6 @@
 
 :Original: Documentation/core-api/memory-hotplug.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
-.. _cn_core-api_memory-hotplug:
-
 ==========
 内存热插拔
 ==========

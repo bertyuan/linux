@@ -2,12 +2,6 @@
 
 :Original: Documentation/core-api/irq/irqflags-tracing.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_irqflags-tracing.rst:
-
 =================
 IRQ-flags状态追踪
 =================

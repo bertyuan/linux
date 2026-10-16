@@ -3,15 +3,6 @@
 
 :Original: Documentation/networking/vxlan.rst
 
-:翻译:
-
- 范雨 Fan Yu <fan.yu9@zte.com.cn>
-
-:校译:
-
- - 邱禹潭 Qiu Yutan <qiu.yutan@zte.com.cn>
- - 徐鑫 xu xin <xu.xin16@zte.com.cn>
-
 ==========================
 虚拟扩展本地局域网协议文档
 ==========================

@@ -3,10 +3,6 @@
 
 :Original: Documentation/locking/mutex-design.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ================
 通用互斥锁子系统
 ================

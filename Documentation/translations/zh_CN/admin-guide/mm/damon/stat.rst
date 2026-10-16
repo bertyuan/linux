@@ -3,10 +3,6 @@
 
 :Original: Documentation/admin-guide/mm/damon/stat.rst
 
-:翻译:
-
- Doehyun Baek <doehyunbaek@gmail.com>
-
 ====================
 数据访问监测结果统计
 ====================

@@ -3,11 +3,6 @@
 
 :Original: Documentation/arch/riscv/vm-layout.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-        Binbin Zhou <zhoubinbin@loongson.cn>
-
 ============================
 RISC-V Linux上的虚拟内存布局
 ============================

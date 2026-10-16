@@ -4,12 +4,6 @@
 
 :Original: Documentation/arch/openrisc/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_openrisc_index:
-
 =================
 OpenRISC 体系架构
 =================

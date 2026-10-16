@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/sak.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 完整性策略执行（IPE）-内核文档
 ==============================
 

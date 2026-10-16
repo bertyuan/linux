@@ -2,16 +2,6 @@
 
 :Original: Documentation/core-api/kref.rst
 
-翻译:
-
-司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-校译：
-
- <此处请校译员签名（自愿），我将在下一个版本添加>
-
-.. _cn_core_api_kref.rst:
-
 =================================
 为内核对象添加引用计数器（krefs）
 =================================

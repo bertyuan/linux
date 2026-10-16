@@ -1,20 +1,10 @@
-﻿Copyright 2004 Linus Torvalds
+Copyright 2004 Linus Torvalds
 Copyright 2004 Pavel Machek <pavel@ucw.cz>
 Copyright 2006 Bob Copeland <me@bobcopeland.com>
 
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/dev-tools/sparse.rst
-
-:翻译:
-
- Li Yang <leoyang.li@nxp.com>
-
-:校译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_sparse:
 
 Sparse
 ======

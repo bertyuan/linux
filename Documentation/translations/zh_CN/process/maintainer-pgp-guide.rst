@@ -3,13 +3,6 @@
 
 :Original: Documentation/process/maintainer-pgp-guide.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 ===================
 内核维护者 PGP 指南
 ===================

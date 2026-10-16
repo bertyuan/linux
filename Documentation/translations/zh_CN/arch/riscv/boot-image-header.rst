@@ -2,12 +2,6 @@
 
 :Original: Documentation/arch/riscv/boot-image-header.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_boot-image-header.rst:
-
 ==========================
 RISC-V Linux启动镜像文件头
 ==========================

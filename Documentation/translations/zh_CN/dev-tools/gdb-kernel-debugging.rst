@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/process/debugging/gdb-kernel-debugging.rst
-:Translator: 高超 gao chao <gaochao49@huawei.com>
 
 通过gdb调试内核和模块
 =====================

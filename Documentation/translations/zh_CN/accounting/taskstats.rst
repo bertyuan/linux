@@ -2,8 +2,6 @@
 
 :Original: Documentation/accounting/taskstats.rst
 
-:Translator: Yang Yang <yang.yang29@zte.com.cn>
-
 ================
 每任务的统计接口
 ================

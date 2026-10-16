@@ -2,14 +2,6 @@
 
 :Original: Documentation/scheduler/completion.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 =======================================
 完成 - "等待完成" 屏障应用程序接口(API)
 =======================================

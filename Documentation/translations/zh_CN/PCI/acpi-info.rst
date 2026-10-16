@@ -3,13 +3,6 @@
 
 :Original: Documentation/PCI/acpi-info.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 =====================
 PCI主桥的ACPI注意事项
 =====================

@@ -3,17 +3,6 @@
 
 :Original: Documentation/virt/paravirt_ops.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 陈飞杨 Feiyang Chen <chenfeiyang@loongson.cn>
- 时奎亮 Alex Shi <alexs@kernel.org>
-
-.. _cn_virt_paravirt_ops:
-
 ============
 半虚拟化操作
 ============

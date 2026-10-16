@@ -5,12 +5,6 @@
 :Original: :ref:`Documentation/process/stable-api-nonsense.rst
            <stable_api_nonsense>`
 
-译者::
-
-        中文版维护者： 钟宇  TripleX Chung <xxx.phy@gmail.com>
-        中文版翻译者： 钟宇  TripleX Chung <xxx.phy@gmail.com>
-        中文版校译者： 李阳  Li Yang <leoyang.li@nxp.com>
-
 Linux 内核驱动接口
 ==================
 

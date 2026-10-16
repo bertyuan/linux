@@ -4,14 +4,6 @@
 
 :Original: Documentation/dev-tools/ubsan.rst
 
-:翻译:
-
- 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
-
-:校译:
-
- 王昱力 WangYuli <wangyuli@uniontech.com>
-
 未定义行为消毒剂 - UBSAN
 ====================================
 

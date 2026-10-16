@@ -2,9 +2,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/admin-guide/module-signing.rst
-:翻译:
- 朱岩 Yan Zhu <zhuyan2015@qq.com>
-
 
 ================
 内核模块签名机制

@@ -3,12 +3,6 @@
 
 :Original: Documentation/scsi/libsas.rst
 
-:翻译:
-
- 张钰杰 Yujie Zhang <yjzhang@leap-io-kernel.com>
-
-:校译:
-
 ======
 SAS 层
 ======

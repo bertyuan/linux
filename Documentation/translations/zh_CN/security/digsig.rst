@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/digsig.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ===============
 数字签名验证API
 ===============

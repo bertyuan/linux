@@ -2,16 +2,6 @@
 
 :Original: :ref:`Documentation/process/1.Intro.rst <development_process_intro>`
 
-:Translator:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
-.. _cn_development_process_intro:
-
 引言
 ====
 

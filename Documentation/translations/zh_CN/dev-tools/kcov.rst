@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/dev-tools/kcov.rst
-:Translator: 刘浩阳 Haoyang Liu <tttturtleruss@hust.edu.cn>
 
 KCOV: 用于模糊测试的代码覆盖率
 ==============================

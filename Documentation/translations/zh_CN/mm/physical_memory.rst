@@ -4,10 +4,6 @@
 
 :Original: Documentation/mm/physical_memory.rst
 
-:翻译:
-
-   王亚鑫 Yaxin Wang <wang.yaxin@zte.com.cn>
-
 ========
 物理内存
 ========

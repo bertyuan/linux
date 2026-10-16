@@ -1,10 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/admin-guide/lockup-watchdogs.rst
-:Translator: Hailong Liu <liu.hailong6@zte.com.cn>
-
-.. _cn_lockup-watchdogs:
-
 
 =================================================
 Softlockup与hardlockup检测机制(又名:nmi_watchdog)

@@ -2,16 +2,6 @@
 
 :Original: Documentation/core-api/unaligned-memory-access.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 时奎亮 <alexs@kernel.org>
-
-.. _cn_core-api_unaligned-memory-access:
-
 ==============
 非对齐内存访问
 ==============

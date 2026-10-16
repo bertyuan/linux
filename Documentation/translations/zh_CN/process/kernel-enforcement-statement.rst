@@ -1,9 +1,6 @@
-﻿.. _cn_process_statement_kernel:
-
-.. include:: ../disclaimer-zh_CN.rst
+﻿.. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/kernel-enforcement-statement.rst <process_statement_kernel>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
 
 Linux 内核执行声明
 ------------------

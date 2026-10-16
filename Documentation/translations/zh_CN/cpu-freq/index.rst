@@ -4,12 +4,6 @@
 
 :Original: Documentation/cpu-freq/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_index.rst:
-
 =======================================================
 Linux CPUFreq - Linux(TM)内核中的CPU频率和电压升降代码
 =======================================================

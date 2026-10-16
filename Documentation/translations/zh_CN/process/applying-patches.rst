@@ -4,10 +4,6 @@
 
 :Original: Documentation/process/applying-patches.rst
 
-:翻译:
-
- 袁维杰 Weijie Yuan <wy@wyuan.org>
-
 将补丁应用到 Linux 内核
 +++++++++++++++++++++++
 

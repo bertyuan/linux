@@ -3,13 +3,6 @@
 
 :Original: Documentation/scsi/scsi_eh.rst
 
-:翻译:
-
- 郝栋栋 doubled <doubled@leap-io-kernel.com>
-
-:校译:
-
-
 ===================
 SCSI 中间层错误处理
 ===================

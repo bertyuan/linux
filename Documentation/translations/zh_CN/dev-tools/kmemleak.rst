@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/dev-tools/kmemleak.rst
-:Translator: 刘浩阳 Haoyang Liu <tttturtleruss@hust.edu.cn>
 
 内核内存泄露检测器
 ==================

@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/kbuild/headers_install.rst
-:Translator: 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
 
 ============================
 导出内核头文件供用户空间使用

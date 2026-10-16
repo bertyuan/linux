@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/mptcp-sysctl.rst
 
-:翻译:
-
-   孙渔喜 Sun yuxi <sun.yuxi@zte.com.cn>
-
 ================
 MPTCP Sysfs 变量
 ================

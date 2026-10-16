@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/ipv6.rst
 
-:翻译:
-
-	陈思为 Siwei Chen <businiaoanka@anka1.top>
-
 ====
 IPv6
 ====

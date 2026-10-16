@@ -3,13 +3,6 @@
 
 :Original: Documentation/usb/dwc3.rst
 
-:翻译:
-
- 白钶凡 Kefan Bai <baikefan@leap-io-kernel.com>
-
-:校译:
-
-
 =========
 DWC3 驱动
 =========

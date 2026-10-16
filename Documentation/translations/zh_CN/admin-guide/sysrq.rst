@@ -2,16 +2,6 @@
 
 :Original: Documentation/admin-guide/sysrq.rst
 
-:翻译:
-
- 黄军华 Junhua Huang <huang.junhua@zte.com.cn>
-
-:校译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_admin-guide_sysrq:
-
 Linux 魔法系统请求键骇客
 ========================
 

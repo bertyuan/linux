@@ -3,13 +3,6 @@
 
 :Original: Documentation/admin-guide/index.rst
 
-:翻译:
-
- 时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-
- 朱岩 Yan Zhu <zhuyan2015@qq.com>
-
-
 Linux 内核用户和管理员指南
 ==========================
 

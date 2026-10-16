@@ -2,16 +2,6 @@
 
 :Original: Documentation/core-api/memory-allocation.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 时奎亮 <alexs@kernel.org>
-
-.. _cn_core-api_memory-allocation:
-
 ============
 内存分配指南
 ============

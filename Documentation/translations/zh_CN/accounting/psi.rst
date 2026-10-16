@@ -1,10 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/accounting/psi.rst
-:Translator: Yang Yang <yang.yang29@zte.com.cn>
-
-.. _cn_psi.rst:
-
 
 =================
 PSI——压力阻塞信息

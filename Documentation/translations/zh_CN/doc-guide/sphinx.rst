@@ -2,8 +2,6 @@
 
 :Original: Documentation/doc-guide/sphinx.rst
 
-:译者: 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. _sphinxdoc_zh:
 
 简介

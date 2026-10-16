@@ -2,12 +2,6 @@
 
 :Original: Documentation/arch/parisc/debugging.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_parisc_debugging:
-
 =================
 调试PA-RISC
 =================

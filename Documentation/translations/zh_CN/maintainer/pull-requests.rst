@@ -2,10 +2,6 @@
 
 :Original: Documentation/maintainer/pull-requests.rst
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 .. _pullrequests_zh:
 
 如何创建拉取请求

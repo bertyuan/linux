@@ -4,10 +4,6 @@
 
 :Original: Documentation/arch/loongarch/booting.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 ====================
 启动 Linux/LoongArch
 ====================

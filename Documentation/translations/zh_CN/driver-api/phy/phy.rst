@@ -3,10 +3,6 @@
 
 :Original: Documentation/driver-api/phy/phy.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
 =========
 PHY子系统
 =========

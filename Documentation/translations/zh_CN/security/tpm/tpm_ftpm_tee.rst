@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/tpm/tpm_ftpm_tee.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ===========
 固件TPM驱动
 ===========

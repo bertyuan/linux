@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/license-rules.rst <kernel_licensing>`
-:Translator: Alex Shi <alex.shi@linux.alibaba.com>
 
 .. _cn_kernel_licensing:
 

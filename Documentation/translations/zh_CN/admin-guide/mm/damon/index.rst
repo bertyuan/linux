@@ -3,12 +3,6 @@
 
 :Original: Documentation/admin-guide/mm/damon/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
 ========================================
 DAMON：数据访问监测和访问感知系统操作
 ========================================

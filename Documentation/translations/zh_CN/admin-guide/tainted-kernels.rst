@@ -2,10 +2,6 @@
 
 :Original: :doc:`../../../admin-guide/tainted-kernels`
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 受污染的内核
 -------------
 

@@ -2,8 +2,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/admin-guide/numastat.rst
-:Translator: Tao Zou <wodemia@linux.alibaba.com>
-
 
 =======================
 Numa策略命中/未命中统计

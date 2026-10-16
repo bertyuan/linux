@@ -2,12 +2,7 @@
 
 .. include:: ../disclaimer-zh_CN.rst
 
-.. _cn_researcherguidelines:
-
 :Original: Documentation/process/researcher-guidelines.rst
-
-:译者:
- - 慕冬亮 Dongliang Mu <dzm91@hust.edu.cn>
 
 研究人员指南
 +++++++++++++++++++++

@@ -3,10 +3,6 @@
 
 :Original: Documentation/userspace-api/no_new_privs.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 ============
 无新权限标志
 ============

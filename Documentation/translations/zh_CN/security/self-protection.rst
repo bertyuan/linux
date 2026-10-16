@@ -2,10 +2,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 :Original: Documentation/security/self-protection.rst
 
-:翻译:
-
- 张巍 zhangwei <zhangwei@cqsoftware.com.cn>
-
 ============
 内核自我保护
 ============

@@ -3,12 +3,6 @@
 
 :Original: Documentation/mm/page_tables.rst
 
-:翻译:
-
- 张鹏宇 Pengyu Zhang <zpenya1314@gmail.com>
-
-:校译:
-
 ====
 页表
 ====

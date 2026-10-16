@@ -3,9 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/filesystems/index.rst <filesystems_index>`
-:Translator: Wang Wenhu <wenhu.wang@vivo.com>
-
-.. _cn_filesystems_index:
 
 ========================
 Linux Kernel中的文件系统

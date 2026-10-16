@@ -2,12 +2,6 @@
 
 :Original: Documentation/core-api/index.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_core-api_index.rst:
-
 ===========
 核心API文档
 ===========

@@ -2,17 +2,6 @@
 
 :Original: Documentation/core-api/mm-api.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
- 时奎亮<alexs@kernel.org>
-
-.. _cn_core-api_mm-api:
-
 ============
 内存管理APIs
 ============

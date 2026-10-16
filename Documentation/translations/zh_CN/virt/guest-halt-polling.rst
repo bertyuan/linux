@@ -2,16 +2,6 @@
 
 :Original: Documentation/virt/guest-halt-polling.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 时奎亮 Alex Shi <alexs@kernel.org>
-
-.. _cn_virt_guest-halt-polling:
-
 ========================================
 客户机停机轮询机制（Guest halt polling）
 ========================================

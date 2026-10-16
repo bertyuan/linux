@@ -3,10 +3,6 @@
 
 :Original: Documentation/security/sak.rst
 
-:翻译:
-
- 张巍 zhangwei <zhangwei@cqsoftware.com.cn>
-
 ===========================
 Linux 安全注意键（SAK）处理
 ===========================

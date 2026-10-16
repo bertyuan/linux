@@ -2,12 +2,6 @@
 
 :Original: Documentation/arch/openrisc/openrisc_port.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_openrisc_port:
-
 ==============
 OpenRISC Linux
 ==============

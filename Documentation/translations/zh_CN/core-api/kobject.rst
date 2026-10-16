@@ -2,12 +2,6 @@
 
 :Original: Documentation/core-api/kobject.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_core_api_kobject.rst:
-
 =======================================================
 关于kobjects、ksets和ktypes的一切你没想过需要了解的东西
 =======================================================

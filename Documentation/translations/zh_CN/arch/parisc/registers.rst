@@ -2,12 +2,6 @@
 
 :Original: Documentation/arch/parisc/registers.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_parisc_registers:
-
 =========================
 Linux/PA-RISC的寄存器用法
 =========================

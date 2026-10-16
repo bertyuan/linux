@@ -1,7 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/process/cve.rst
-:Translator: Dongliang Mu <dzm91@hust.edu.cn>
 
 ====
 CVEs

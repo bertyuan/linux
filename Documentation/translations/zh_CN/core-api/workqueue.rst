@@ -3,14 +3,6 @@
 
 :Original: Documentation/core-api/workqueue.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
- 陈兴友 Xingyou Chen <rockrush@rockwork.org>
-
-.. _cn_workqueue.rst:
-
 ========
 工作队列
 ========

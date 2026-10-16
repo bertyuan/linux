@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/sriov.rst
 
-:翻译:
-
-	陈思为 Siwei Chen <businiaoanka@anka1.top>
-
 ===============
 网卡 SR-IOV API
 ===============

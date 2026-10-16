@@ -2,10 +2,6 @@
 
 :Original: :doc:`../../../admin-guide/bug-bisect`
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 二分（bisect）缺陷
 +++++++++++++++++++
 

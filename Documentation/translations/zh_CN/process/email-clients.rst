@@ -6,16 +6,6 @@
 
 :Original: Documentation/process/email-clients.rst
 
-:译者:
- - 贾威威  Harry Wei <harryxiyou@gmail.com>
- - 时奎亮  Alex Shi <alexs@kernel.org>
- - 吴想成  Wu XiangCheng <bobwxc@email.cn>
-
-:校译:
- - Yinglin Luan <synmyth@gmail.com>
- - Xiaochen Wang <wangxiaochen0@gmail.com>
- - yaxinsn <yaxinsn@163.com>
-
 Linux邮件客户端配置信息
 =======================
 

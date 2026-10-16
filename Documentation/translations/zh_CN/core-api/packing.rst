@@ -4,16 +4,6 @@
 
 :Original: Documentation/core-api/packing.rst
 
-:翻译:
-
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 吴想成 Wu Xiangcheng <bobwxc@email.cn>
- 时奎亮 Alex Shi <alexs@kernel.org>
-
 ========================
 通用的位域打包和解包函数
 ========================

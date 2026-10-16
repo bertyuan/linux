@@ -2,10 +2,6 @@
 
 :Original: Documentation/admin-guide/unicode.rst
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 Unicode（统一码）支持
 ======================
 

@@ -3,14 +3,6 @@
 
 :Original: Documentation/scsi/link_power_management_policy.rst
 
-:翻译:
-
- 郝栋栋 doubled <doubled@leap-io-kernel.com>
-
-:校译:
-
-
-
 ================
 链路电源管理策略
 ================

@@ -2,10 +2,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 :Original: Documentation/security/siphash.rst
 
-:翻译:
-
- 张巍 zhangwei <zhangwei@cqsoftware.com.cn>
-
 =====================================
 SipHash - 一种短输入伪随机函数（PRF）
 =====================================

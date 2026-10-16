@@ -2,17 +2,6 @@
 
 :Original: Documentation/core-api/cachetlb.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
-.. _cn_core-api_cachetlb:
-
 ======================
 Linux下的缓存和TLB刷新
 ======================

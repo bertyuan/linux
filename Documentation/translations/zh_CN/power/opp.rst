@@ -3,10 +3,6 @@
 
 :Original: Documentation/power/opp.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ======================
 操作性能值（OPP）库
 ======================

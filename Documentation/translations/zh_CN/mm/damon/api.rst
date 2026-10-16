@@ -2,13 +2,6 @@
 
 :Original: Documentation/mm/damon/api.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 =======
 API参考
 =======

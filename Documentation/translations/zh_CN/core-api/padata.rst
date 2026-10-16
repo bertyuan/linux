@@ -4,12 +4,6 @@
 
 :Original: Documentation/core-api/padata.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_core_api_padata.rst:
-
 ==================
 padata并行执行机制
 ==================

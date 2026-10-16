@@ -3,12 +3,6 @@
 
 :Original: Documentation/block/index.rst
 
-:翻译:
-
- 柯子杰 ke zijie <kezijie@leap-io-kernel.com>
-
-:校译:
-
 =====
 Block
 =====

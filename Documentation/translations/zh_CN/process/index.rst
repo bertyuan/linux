@@ -7,10 +7,6 @@
 
 :Original: Documentation/process/index.rst
 
-:翻译:
-
- Alex Shi <alex.shi@linux.alibaba.com>
-
 ========================
 与Linux 内核社区一起工作
 ========================

@@ -4,10 +4,6 @@
 
 :Original: Documentation/networking/xfrm_proc.rst
 
-:翻译:
-
-   王亚鑫 Wang Yaxin <wang.yaxin@zte.com.cn>
-
 =================================
 XFRM proc - /proc/net/xfrm_* 文件
 =================================

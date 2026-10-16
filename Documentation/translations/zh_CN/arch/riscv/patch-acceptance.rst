@@ -4,12 +4,6 @@
 
 :Original: Documentation/arch/riscv/patch-acceptance.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_riscv_patch-acceptance:
-
 arch/riscv 开发者维护指南
 =========================
 

@@ -3,10 +3,6 @@
 
 :Original: Documentation/userspace-api/sysfs-platform_profile.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 ==========================================================
 平台配置文件选择（如 /sys/firmware/acpi/platform_profile）
 ==========================================================

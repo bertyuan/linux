@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/tpm/tpm_event_log.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ===========
 TPM事件日志
 ===========

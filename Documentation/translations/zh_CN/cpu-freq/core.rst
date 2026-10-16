@@ -3,14 +3,6 @@
 
 :Original: Documentation/cpu-freq/core.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ====================================
 CPUFreq核心和CPUFreq通知器的通用说明
 ====================================

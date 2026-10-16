@@ -4,12 +4,6 @@
 
 :Original: Documentation/arch/mips/ingenic-tcu.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-.. _cn_ingenic-tcu:
-
 ===============================================
 君正 JZ47xx SoC定时器/计数器硬件单元
 ===============================================

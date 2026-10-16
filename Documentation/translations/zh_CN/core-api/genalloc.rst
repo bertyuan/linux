@@ -2,16 +2,6 @@
 
 :Original: Documentation/core-api/genalloc.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 时奎亮 <alexs@kernel.org>
-
-.. _cn_core-api_genalloc:
-
 genalloc/genpool子系统
 ======================
 

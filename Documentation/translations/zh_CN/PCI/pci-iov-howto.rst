@@ -4,16 +4,6 @@
 
 :Original: Documentation/PCI/pci-iov-howto.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
-
-.. _cn_pci-iov-howto:
-
 ==========================
 PCI Express I/O 虚拟化指南
 ==========================

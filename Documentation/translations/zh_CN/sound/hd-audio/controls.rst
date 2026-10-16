@@ -1,7 +1,5 @@
 .. SPDX-License-Identifier: GPL-2.0
 
-Chinese translator: Huang Jianghui <huangjianghui@uniontech.com>
----------------------------------------------------------------------
 .. include:: ../../disclaimer-zh_CN.rst
 以下为正文
 ---------------------------------------------------------------------

@@ -3,10 +3,6 @@
 
 :Original: Documentation/power/energy-model.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ============
 设备能量模型
 ============

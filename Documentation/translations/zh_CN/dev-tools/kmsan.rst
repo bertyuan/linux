@@ -3,7 +3,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/dev-tools/kmsan.rst
-:Translator: 刘浩阳 Haoyang Liu <tttturtleruss@hust.edu.cn>
 
 =======================
 内核内存消毒剂（KMSAN）

@@ -3,16 +3,6 @@
 
 :Original: Documentation/virt/acrn/io-request.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 时奎亮 Alex Shi <alexs@kernel.org>
-
-.. _cn_virt_acrn_io-request:
-
 I/O请求处理
 ===========
 

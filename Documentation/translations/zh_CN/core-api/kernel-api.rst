@@ -2,13 +2,6 @@
 
 :Original: Documentation/core-api/kernel-api.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-.. _cn_kernel-api.rst:
-
 ============
 Linux内核API
 ============

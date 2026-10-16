@@ -3,9 +3,6 @@
 
 :Original: Documentation/security/tpm/xen-tpmfront.rst
 
-:翻译:
- 赵硕 Shuo Zhao <zhaoshuo@cqsoftware.com.cn>
-
 ================
 Xen的虚拟TPM接口
 ================

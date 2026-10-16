@@ -1,19 +1,8 @@
-﻿.. _cn_process_howto:
+.. _cn_process_howto:
 
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: :ref:`Documentation/process/howto.rst <process_howto>`
-
-译者::
-
-    英文版维护者： Greg Kroah-Hartman <greg@kroah.com>
-    中文版维护者： 李阳  Li Yang <leoyang.li@nxp.com>
-    中文版翻译者： 李阳  Li Yang <leoyang.li@nxp.com>
-                   时奎亮 Alex Shi <alex.shi@linux.alibaba.com>
-    中文版校译者:
-                   钟宇  TripleX Chung <xxx.phy@gmail.com>
-                   陈琦  Maggie Chen <chenqi@beyondsoft.com>
-                   王聪  Wang Cong <xiyou.wangcong@gmail.com>
 
 如何参与Linux内核开发
 =====================

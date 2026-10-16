@@ -4,8 +4,6 @@
 
 :Original: Documentation/doc-guide/maintainer-profile.rst
 
-:译者: 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 文档子系统维护人员条目概述
 ==========================
 

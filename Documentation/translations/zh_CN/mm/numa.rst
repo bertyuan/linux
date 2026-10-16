@@ -1,12 +1,5 @@
 :Original: Documentation/mm/numa.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
 始于1999年11月，作者： <kanoj@sgi.com>
 
 ==========================

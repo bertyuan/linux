@@ -3,10 +3,6 @@
 
 :Original: Documentation/scheduler/sched-design-CFS.rst
 
-:翻译:
-
-  唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ===============
 完全公平调度器
 ===============

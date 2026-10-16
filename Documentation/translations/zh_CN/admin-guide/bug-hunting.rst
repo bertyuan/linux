@@ -2,10 +2,6 @@
 
 :Original: :doc:`../../../admin-guide/bug-hunting`
 
-:译者:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
 追踪缺陷
 =========
 

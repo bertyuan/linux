@@ -2,14 +2,6 @@
 
 :Original: Documentation/scheduler/sched-arch.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
-
-
 ===============================
 架构特定代码的CPU调度器实现提示
 ===============================

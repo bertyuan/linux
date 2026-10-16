@@ -4,14 +4,6 @@
 
 :Original: Documentation/cpu-freq/cpufreq-stats.rst
 
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
-
-:校译:
-
- 唐艺舟 Tang Yizhou <tangyeechou@gmail.com>
-
 ==========================================
 sysfs CPUFreq Stats的一般说明
 ==========================================

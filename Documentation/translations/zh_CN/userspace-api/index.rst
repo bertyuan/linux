@@ -3,10 +3,6 @@
 
 :Original: Documentation/userspace-api/index.rst
 
-:翻译:
-
- 李睿 Rui Li <me@lirui.org>
-
 =========================
 Linux 内核用户空间API指南
 =========================

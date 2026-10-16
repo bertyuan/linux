@@ -1,16 +1,6 @@
 .. include:: ../disclaimer-zh_CN.rst
 
 :Original: Documentation/core-api/cpu_hotplug.rst
-:翻译:
-
- 司延腾 Yanteng Si <siyanteng@loongson.cn>
- 周彬彬 Binbin Zhou <zhoubinbin@loongson.cn>
-
-:校译:
-
- 吴想成 Wu XiangCheng <bobwxc@email.cn>
-
-.. _cn_core_api_cpu_hotplug:
 
 =================
 内核中的CPU热拔插
