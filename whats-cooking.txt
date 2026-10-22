@@ -1,8 +1,9 @@
 To: linux-doc@vger.kernel.org
 Cc: Alex Shi <alexs@kernel.org>, Dongliang Mu <dzm91@hust.edu.cn>,
 	Yanteng Si <si.yanteng@linux.dev>,
-	Chen-Yu Yeh <chenyou910331@gmail.com>
-Subject: What's cooking in Chinese docs (Sep 2026, #01)
+	Chen-Yu Yeh <chenyou910331@gmail.com>,
+	Weijie Yuan <wy@wyuan.org>
+Subject: What's cooking in Chinese docs (Oct 2026, #01)
 
 Here are the topics waiting to be merged.
 
@@ -39,27 +40,93 @@ Special thanks to Siwei for voluntarily completing a part of the work!
 Low-quality code was unintentional but inevitable, please direct point
 it out.
 
-
-Happy Mid-Autumn Festival!
-
 -----------------------------------------------------------------------
 
 [Cooking]
 
-* Rénich Bon ´Ciri´c 2026-09-20
+* Yao Yiqi 2026-10-22
+  [PATCH] docs/zh_CN: fix typos in admin-guide/README
+
+  Reviewed by Dongliang.
+  source: <20261022135949.361566-1-yyaqia@gmail.com>
+
+
+* Yikun Wei 2026-10-20
+  [PATCH v3 0/5] docs/zh_CN: add fault-injection Chinese translations
+  [PATCH v3 1/5] docs/zh_CN: add fault-injection index Chinese translation
+  [PATCH v3 2/5] docs/zh_CN: add fault-injection Chinese translation
+  [PATCH v3 3/5] docs/zh_CN: add notifier-error-inject Chinese translation
+  [PATCH v3 4/5] docs/zh_CN: add nvme-fault-injection Chinese translation
+  [PATCH v3 5/5] docs/zh_CN: add provoke-crashes
+
+  Needs review.
+  source: <SI2PPFCA6543649A166AABA54D11A931F7DDD672@SI2PPFCA6543649.apcprd04.prod.outlook.com>
+
+
+* Weijie Yuan 2026-10-21
+  [PATCH v2 0/2] docs/zh_CN: cleanup headers
+  [PATCH v2 1/2] docs/zh_CN: remove translator-related headers
+  [PATCH v2 2/2] docs/zh_CN: remove Translator field in header template
+
+  Needs review.
+  source: <cover.1792569583.git.wy@wyuan.org>
+
+
+* Jiaming Ouyang 2026-10-11
+  [PATCH RESEND v3] docs/zh_CN: add Chinese translation for usb/ohci.rst
+
+  Needs review.
+  source: <20261011150310.51673-1-jiamingouyang13@gmail.com>
+  warning: multiple duplicate versions on the list.
+
+
+* Chen-Yu Yeh 2026-09-29
+  [PATCH 0/3] docs/zh_TW: mark translations that are not kept in sync
+  [PATCH 1/3] docs/zh_TW: add a notice for translations not kept in sync
+  [PATCH 2/3] docs/zh_TW: mark translations outside the maintained set
+  [PATCH 3/3] docs/zh_TW: link filesystems/ and cpu-freq/ from the index
+
+  Acked by Weijie.
+  source: <20260929131142.266819-1-chenyou910331@gmail.com>
+
+
+* Chen-Yu Yeh 2026-09-29
+  [PATCH] docs/zh_TW: remove the unreachable plain-text translations Chen-Yu Yeh
+
+  Acked by Weijie.
+  source: <20260929131109.266535-1-chenyou910331@gmail.com>
+
+
+* Chen-Yu Yeh 2026-09-29
+  [PATCH 0/4] docs/zh_TW: relocate translations to follow the English layout
+  [PATCH 1/4] docs/zh_TW: move security-bugs to process/
+  [PATCH 2/4] docs/zh_TW: move magic-number to staging/
+  [PATCH 3/4] docs/zh_TW: move gdb-kernel-debugging to process/debugging/
+  [PATCH 4/4] docs/zh_TW: add missing :Original: fields
+
+  Reviewed by Weijie.
+  source: <20260929131020.266120-1-chenyou910331@gmail.com>
+
+
+* Chen-Yu Yeh 2026-09-29
+  [PATCH v2 0/7] docs/zh_TW: remove duplicated maintainer contact information
+  [PATCH v2 1/7] docs/zh_TW: process: remove maintainer contact information
+  [PATCH v2 2/7] docs/zh_TW: admin-guide: remove maintainer contact information
+  [PATCH v2 3/7] docs/zh_TW: arch: remove maintainer contact information
+  [PATCH v2 4/7] docs/zh_TW: dev-tools: remove maintainer contact information
+  [PATCH v2 5/7] docs/zh_TW: filesystems: remove maintainer contact information
+  [PATCH v2 6/7] docs/zh_TW: cpu-freq: remove maintainer contact information
+  [PATCH v2 7/7] docs/zh_TW: remove the last maintainer contact references
+
+  Acked by Weijie.
+  source: <20260929115956.229610-1-chenyou910331@gmail.com>
+
+
+* Rénich Bon Ćirić 2026-09-20
   [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
 
   Needs review.
-
   source: https://lore.kernel.org/linux-doc/20260920073144.546566-1-renich@evalinux.com/
-
-
-* Jiaming Ouyang 2026-09-09
-  [PATCH] docs/zh_CN: add Chinese translation for usb/ohci.rst
-
-  Needs review.
-
-  source: https://lore.kernel.org/linux-doc/CAMnqnYwK6HDwV3jRLNWYTfB_w2NmQYn=LRQ41VoWYU53CWd6FA@mail.gmail.com/
 
 
 * Weijie Yuan 2026-09-05
@@ -68,16 +135,14 @@ Happy Mid-Autumn Festival!
   [PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation
 
   Needs review.
-
-  source: https://lore.kernel.org/linux-doc/20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org/
+  source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
 
 
 * Yukai Wu 2026-08-29
   [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
 
   Expecting a re-roll?
-
-  source: https://lore.kernel.org/linux-doc/20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com/
+  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
 
 
 * Weijie Yuan 2026-08-23
@@ -89,8 +154,7 @@ Happy Mid-Autumn Festival!
   [PATCH v2 5/5] docs/zh_CN: remove empty proofreader field from maintainer PGP guide
 
   Needs review.
-
-  source: https://lore.kernel.org/linux-doc/20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org/
+  source: <20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org>
 
 
 * Chen Miao 2026-08-14
@@ -98,7 +162,6 @@ Happy Mid-Autumn Festival!
   [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
 
   Waiting for a separated translation series, as suggested by Dongliang.
-
   comment: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
   source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
   source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
@@ -108,16 +171,14 @@ Happy Mid-Autumn Festival!
   [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
 
   Waiting for response & Expecting a re-roll.
-
-  source: https://lore.kernel.org/linux-doc/20260819025535.2967566-1-ye.liu@linux.dev/
+  source: <20260819025535.2967566-1-ye.liu@linux.dev>
 
 
 * Cui Shuang 2026-07-22 1 commit
   [PATCH v3] docs/zh_CN: Add configurable error injection translation
 
   Waiting for response & Expecting a re-roll.
-
-  source: https://lore.kernel.org/linux-doc/20260722123240.22979-1-imcusg@gmail.com/
+  source: <20260722123240.22979-1-imcusg@gmail.com>
 
 
 * Jiandong Qiu (2026-07-06) 2 commits
@@ -126,8 +187,7 @@ Happy Mid-Autumn Festival!
   [PATCH v3 2/2] docs/zh_CN: update sphinx.rst translation
 
   Needs review.
-
-  source: https://lore.kernel.org/linux-doc/20260706151358.2103703-1-qiujiandong1998@gmail.com/
+  source: <20260706151358.2103703-1-qiujiandong1998@gmail.com>
 
 
 * Yan Zhu (2026-06-12) 10 commits
@@ -147,8 +207,4 @@ Happy Mid-Autumn Festival!
   [PATCH 10/10] docs/zh_CN: add LSM/landlock Chinese translation
 
   Needs review.
-
-  source: https://lore.kernel.org/linux-doc/tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com/
-
-
-Any series missing?
+  source: <tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com>
