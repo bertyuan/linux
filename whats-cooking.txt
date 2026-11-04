@@ -227,3 +227,6 @@ If anyone has any objections, please let us know.
   cf. <20261029124429.294868-9-dzm91@hust.edu.cn>
   cf. <aus2LTFjmZaZPomM@wyuan.org>
   source: <20260920073144.546566-1-renich@evalinux.com>
+
+PS The copy of this report is here now:
+   https://github.com/kernel-zh/linux-zh_TW.git meta
