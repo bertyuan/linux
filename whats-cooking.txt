@@ -57,6 +57,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Weijie Yuan 2026-10-30
+  [PATCH v2] docs/zh_TW: drop unused enforcement statement label
+
+  Needs review.
+  source: <auQwssHcQiM09SDd@wyuan.org>
+
+
 * Dongliang Mu 2026-10-29
   [PATCH v3 0/9] docs/zh_CN: align translation paths and update guides
   [PATCH v3 1/9] docs/zh_CN: update admin-guide/index.rst translation
@@ -119,14 +126,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   source: <20261028072643.32250-1-jiamingouyang13@gmail.com>
 
 
-* Rénich Bon Ćirić 2026-09-20
-  [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
-
-  Needs a different solution?
-  cf. <aus2LTFjmZaZPomM@wyuan.org>
-  source: <20260920073144.546566-1-renich@evalinux.com>
-
-
 * Weijie Yuan 2026-09-05
   [PATCH v2 0/2] docs/zh_CN: update maintainer/configure-git.rst
   [PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
@@ -134,13 +133,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 
   Needs review.
   source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
-
-
-* Yukai Wu 2026-08-29
-  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
-
-  Expecting a reroll?
-  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
 
 
 * Weijie Yuan 2026-08-23
@@ -224,3 +216,14 @@ If anyone has any objections, please let us know.
 
   Acked by Weijie.
   source: <20260929115956.229610-1-chenyou910331@gmail.com>
+
+-------------------------------------------------------------------
+[Discarded]
+
+* Rénich Bon Ćirić 2026-09-20
+  [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
+
+  Replaced by Dongliang's <20261029124429.294868-1-dzm91@hust.edu.cn>
+  cf. <20261029124429.294868-9-dzm91@hust.edu.cn>
+  cf. <aus2LTFjmZaZPomM@wyuan.org>
+  source: <20260920073144.546566-1-renich@evalinux.com>
