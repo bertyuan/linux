@@ -3,9 +3,9 @@ Cc: Alex Shi <alexs@kernel.org>, Dongliang Mu <dzm91@hust.edu.cn>,
 	Yanteng Si <si.yanteng@linux.dev>,
 	Chen-Yu Yeh <chenyou910331@gmail.com>,
 	Weijie Yuan <wy@wyuan.org>
-Subject: What's cooking in Chinese docs (Oct 2026, #01)
+Subject: What's cooking in Chinese docs (Nov 2026, #01)
 
-Here are the topics waiting to be merged.
+Here are the topics for Chinese docs waiting to be merged.
 
 Copies of the source code to Chinese documentation development tree live
 in here:
@@ -21,28 +21,66 @@ Mirrors:
 
 Please report any mirror instability to linux-doc@vger.kernel.org
 
------------------------------------------------------------------------
+-------------------------------------------------------------------
+[Stalled]
 
-[Note]
+* Yukai Wu 2026-08-29
+  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
 
-Continuing with the work by Doehyun Baek, I made a dashboard for Chinese
-documentation patches, which is available at:
+  Waiting for response for too long, stalled.
+  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
 
-  https://buding.wyuan.org/ (cloudflare)
-  https://buding.anka2.top/ (domestically faster)
 
-In general, it brings a feature that enables maintainers to specify a
-patch series status without having to log in (using a key instead).
-But this still needs to be further tested.
+* Chen Miao 2026-08-14
+  [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
+  [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
 
-Special thanks to Siwei for voluntarily completing a part of the work!
+  Waiting for response for too long, stalled.
+  cf. https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
+  source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
+  source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
 
-Low-quality code was unintentional but inevitable, please direct point
-it out.
 
------------------------------------------------------------------------
+* Ye Liu 2026-08-19 1 commit
+  [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
 
+  Waiting for response for too long, stalled.
+  source: <20260819025535.2967566-1-ye.liu@linux.dev>
+
+
+* Cui Shuang 2026-07-22 1 commit
+  [PATCH v3] docs/zh_CN: Add configurable error injection translation
+
+  Waiting for response for too long, stalled.
+  source: <20260722123240.22979-1-imcusg@gmail.com>
+
+-------------------------------------------------------------------
 [Cooking]
+
+* Dongliang Mu 2026-10-29
+  [PATCH v3 0/9] docs/zh_CN: align translation paths and update guides
+  [PATCH v3 1/9] docs/zh_CN: update admin-guide/index.rst translation
+  [PATCH v3 2/9] docs/zh_CN: update admin-guide/README.rst translation
+  [PATCH v3 3/9] docs/zh_CN: add media administrator guide translations
+  [PATCH v3 4/9] docs/zh_CN: reorganize process debugging guides
+  [PATCH v3 5/9] docs/zh_CN: update magic-number to match upstream
+  [PATCH v3 6/9] docs/zh_CN: reorganize media driver API translations
+  [PATCH v3 7/9] docs/zh_CN: move GFS2 translations into filesystems/gfs2
+  [PATCH v3 8/9] docs/zh_CN: update networking/xfrm/xfrm_proc.rst translation
+  [PATCH v3 9/9] docs/zh_CN: remove stale Original fields from SCSI and IPE translations
+
+  Reviewed by Yanteng.
+  source: <20261029124429.294868-1-dzm91@hust.edu.cn>
+
+
+* Jiandong Qiu 2026-10-29
+  [PATCH v4 0/2] docs/zh_CN: update translation of doc-guide/sphinx.rst
+  [PATCH v4 1/2] docs/zh_CN: add process/changes.rst translation
+  [PATCH v4 2/2] docs/zh_CN: update sphinx.rst translation
+
+  Reviewed by Dongliang.
+  source: <cover.1793279600.git.qiujiandong1998@gmail.com>
+
 
 * Yao Yiqi 2026-10-22
   [PATCH] docs/zh_CN: fix typos in admin-guide/README
@@ -59,26 +97,92 @@ it out.
   [PATCH v3 4/5] docs/zh_CN: add nvme-fault-injection Chinese translation
   [PATCH v3 5/5] docs/zh_CN: add provoke-crashes
 
-  Needs review.
+  Expecting a reroll. (thread broken)
+  cf. <6baba360-6ee2-4195-91e4-d22c97d3c146@hust.edu.cn>
   source: <SI2PPFCA6543649A166AABA54D11A931F7DDD672@SI2PPFCA6543649.apcprd04.prod.outlook.com>
 
 
 * Weijie Yuan 2026-10-21
-  [PATCH v2 0/2] docs/zh_CN: cleanup headers
-  [PATCH v2 1/2] docs/zh_CN: remove translator-related headers
-  [PATCH v2 2/2] docs/zh_CN: remove Translator field in header template
+  [PATCH v3 0/2] docs/zh_CN: cleanup headers
+  [PATCH v3 1/2] docs/zh_CN: remove translator-related headers
+  [PATCH v3 2/2] docs/zh_CN: remove Translator field in header template
 
-  Needs review.
+  Partly reviewed by Dongliang with an extra question to Jon.
   source: <cover.1792569583.git.wy@wyuan.org>
 
 
-* Jiaming Ouyang 2026-10-11
-  [PATCH RESEND v3] docs/zh_CN: add Chinese translation for usb/ohci.rst
+* Jiaming Ouyang 2026-10-28
+  [PATCH v4] docs/zh_CN: add Chinese translation for usb/ohci.rst
+
+  Expecting a reroll.
+  cf. <fcabf691-cca4-477d-b387-e50467a41408@hust.edu.cn>
+  source: <20261028072643.32250-1-jiamingouyang13@gmail.com>
+
+
+* Rénich Bon Ćirić 2026-09-20
+  [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
+
+  Needs a different solution?
+  cf. <aus2LTFjmZaZPomM@wyuan.org>
+  source: <20260920073144.546566-1-renich@evalinux.com>
+
+
+* Weijie Yuan 2026-09-05
+  [PATCH v2 0/2] docs/zh_CN: update maintainer/configure-git.rst
+  [PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
+  [PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation
 
   Needs review.
-  source: <20261011150310.51673-1-jiamingouyang13@gmail.com>
-  warning: multiple duplicate versions on the list.
+  source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
 
+
+* Yukai Wu 2026-08-29
+  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
+
+  Expecting a reroll?
+  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
+
+
+* Weijie Yuan 2026-08-23
+  [PATCH v2 0/5] Update maintainer-pgp-guide.rst Chinese translation
+  [PATCH v2 1/5] docs/zh_CN: update maintainer-pgp-guide translation Weijie Yuan
+  [PATCH v2 2/5] docs/zh_CN: clarify free Nitrokey requirements Weijie Yuan
+  [PATCH v2 3/5] docs/zh_CN: update maintainer-pgp-guide kernel.org link Weijie Yuan
+  [PATCH v2 4/5] docs/zh_CN: add kernel.org trust repository reference Weijie Yuan
+  [PATCH v2 5/5] docs/zh_CN: remove empty proofreader field from maintainer PGP guide
+
+  Needs review.
+  source: <20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org>
+
+
+* Yan Zhu 2026-06-12
+  [PATCH 00/10] <cover.1781105672.git.zhuyan2015@qq.com>
+   # Msgid changed
+  [PATCH 00/10] docs/zh_CN: add LSM admin-guide Chinese translation
+                https://lore.kernel.org/linux-doc/tencent_001080DF135CEE2CD1B260EFA08E3CC71A09@qq.com/
+  [PATCH 01/10] docs/zh_CN: add LSM/index Chinese translation
+  [PATCH 02/10] docs/zh_CN: add LSM/apparmor Chinese translation
+  [PATCH 03/10] docs/zh_CN: add LSM/LoadPin Chinese translation
+  [PATCH 04/10] docs/zh_CN: add LSM/SELinux Chinese translation
+  [PATCH 05/10] docs/zh_CN: add LSM/Smack Chinese translation
+  [PATCH 06/10] docs/zh_CN: add LSM/tomoyo Chinese translation
+  [PATCH 07/10] docs/zh_CN: add LSM/Yama Chinese translation
+  [PATCH 08/10] docs/zh_CN: add LSM/SafeSetID Chinese translation
+  [PATCH 09/10] docs/zh_CN: add LSM/ipe Chinese translation
+  [PATCH 10/10] docs/zh_CN: add LSM/landlock Chinese translation
+
+  Waiting for response.
+  cf. <895533d5-99d7-406e-acc2-1f8659075f91@hust.edu.cn>
+  cf. <440378d6-d72c-4edd-9159-582df02b49e6@hust.edu.cn>
+  cf. <e708b270-3adc-4c7e-a48d-9804faed6c44@hust.edu.cn>
+  source: <tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com>
+
+-------------------------------------------------------------------
+[Queuing] #zh_TW
+
+Queuing for 7.5 merge window.
+Currently here: https://github.com/kernel-zh/linux-zh_TW.git docs-next
+If anyone has any objections, please let us know.
 
 * Chen-Yu Yeh 2026-09-29
   [PATCH 0/3] docs/zh_TW: mark translations that are not kept in sync
@@ -120,91 +224,3 @@ it out.
 
   Acked by Weijie.
   source: <20260929115956.229610-1-chenyou910331@gmail.com>
-
-
-* Rénich Bon Ćirić 2026-09-20
-  [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
-
-  Needs review.
-  source: https://lore.kernel.org/linux-doc/20260920073144.546566-1-renich@evalinux.com/
-
-
-* Weijie Yuan 2026-09-05
-  [PATCH v2 0/2] docs/zh_CN: update maintainer/configure-git.rst
-  [PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
-  [PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation
-
-  Needs review.
-  source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
-
-
-* Yukai Wu 2026-08-29
-  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
-
-  Expecting a re-roll?
-  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
-
-
-* Weijie Yuan 2026-08-23
-  [PATCH v2 0/5] Update maintainer-pgp-guide.rst Chinese translation
-  [PATCH v2 1/5] docs/zh_CN: update maintainer-pgp-guide translation Weijie Yuan
-  [PATCH v2 2/5] docs/zh_CN: clarify free Nitrokey requirements Weijie Yuan
-  [PATCH v2 3/5] docs/zh_CN: update maintainer-pgp-guide kernel.org link Weijie Yuan
-  [PATCH v2 4/5] docs/zh_CN: add kernel.org trust repository reference Weijie Yuan
-  [PATCH v2 5/5] docs/zh_CN: remove empty proofreader field from maintainer PGP guide
-
-  Needs review.
-  source: <20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org>
-
-
-* Chen Miao 2026-08-14
-  [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
-  [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
-
-  Waiting for a separated translation series, as suggested by Dongliang.
-  comment: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
-  source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
-  source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
-
-
-* Ye Liu 2026-08-19 1 commit
-  [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
-
-  Waiting for response & Expecting a re-roll.
-  source: <20260819025535.2967566-1-ye.liu@linux.dev>
-
-
-* Cui Shuang 2026-07-22 1 commit
-  [PATCH v3] docs/zh_CN: Add configurable error injection translation
-
-  Waiting for response & Expecting a re-roll.
-  source: <20260722123240.22979-1-imcusg@gmail.com>
-
-
-* Jiandong Qiu (2026-07-06) 2 commits
-  [PATCH v3 0/2] docs/zh_CN: update translation of doc-guide/sphinx.rst
-  [PATCH v3 1/2] docs/zh_CN: add process/changes.rst translation
-  [PATCH v3 2/2] docs/zh_CN: update sphinx.rst translation
-
-  Needs review.
-  source: <20260706151358.2103703-1-qiujiandong1998@gmail.com>
-
-
-* Yan Zhu (2026-06-12) 10 commits
-  [PATCH 00/10] <cover.1781105672.git.zhuyan2015@qq.com>
-   # Msgid changed
-  [PATCH 00/10] docs/zh_CN: add LSM admin-guide Chinese translation
-                https://lore.kernel.org/linux-doc/tencent_001080DF135CEE2CD1B260EFA08E3CC71A09@qq.com/
-  [PATCH 01/10] docs/zh_CN: add LSM/index Chinese translation
-  [PATCH 02/10] docs/zh_CN: add LSM/apparmor Chinese translation
-  [PATCH 03/10] docs/zh_CN: add LSM/LoadPin Chinese translation
-  [PATCH 04/10] docs/zh_CN: add LSM/SELinux Chinese translation
-  [PATCH 05/10] docs/zh_CN: add LSM/Smack Chinese translation
-  [PATCH 06/10] docs/zh_CN: add LSM/tomoyo Chinese translation
-  [PATCH 07/10] docs/zh_CN: add LSM/Yama Chinese translation
-  [PATCH 08/10] docs/zh_CN: add LSM/SafeSetID Chinese translation
-  [PATCH 09/10] docs/zh_CN: add LSM/ipe Chinese translation
-  [PATCH 10/10] docs/zh_CN: add LSM/landlock Chinese translation
-
-  Needs review.
-  source: <tencent_7080BF6BB8F05936649DDC091FFD8C45210A@qq.com>
