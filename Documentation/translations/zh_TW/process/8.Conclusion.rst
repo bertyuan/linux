@@ -2,7 +2,8 @@
 
 .. include:: ../disclaimer-zh_TW.rst
 
-:Original: :ref:`Documentation/process/8.Conclusion.rst <development_conclusion>`
+:Original: :ref:`Documentation/process/8.Conclusion.rst
+           <development_conclusion>`
 
 .. _tw_development_conclusion:
 
@@ -10,13 +11,13 @@
 ========
 
 關於Linux核心開發和相關主題的資訊來源很多。首先是在核心原始碼分發中找到的
-文件目錄。頂級
-:ref:`Documentation/translations/zh_TW/process/howto.rst <tw_process_howto>`
-文件是一個重要的起點；
-:ref:`Documentation/translations/zh_TW/process/submitting-patches.rst <tw_submittingpatches>`
-也是所有核心開發人員都應該閱讀的內容。許多內部核心API都是使用kerneldoc機制
-記錄的；“make htmldocs”或“make pdfdocs”可用於以HTML或PDF格式產生這些文件
-（儘管某些發行版提供的tex版本會遇到內部限制，無法正確處理文件）。
+文件目錄。請從頂層的
+:ref:`Documentation/process/howto.rst <tw_process_howto>`
+開始；也請閱讀
+:ref:`Documentation/process/submitting-patches.rst <tw_submittingpatches>`。
+許多內部核心 API 都是使用 kerneldoc 機制記錄的；“make htmldocs”或“make pdfdocs”
+可用於以 HTML 或 PDF 格式產生這些文件（儘管某些發行版提供的 TeX 版本會遇到內部
+限制，無法正確處理文件）。
 
 不同的網站在各個細節層次上討論核心開發。本文作者想謙虛地建議用 https://lwn.net/
 作為來源；有關許多特定核心主題的資訊可以透過以下網址的 LWN 核心索引找到：
@@ -31,8 +32,8 @@
 
 關於核心開發有很多書：
 
-  《Linux設備驅動程序》第三版（Jonathan Corbet、Alessandro Rubini和Greg Kroah-Hartman）
-  線上版本在 https://lwn.net/Kernel/LDD3/
+  《Linux設備驅動程序》第三版（Jonathan Corbet、Alessandro Rubini和
+  Greg Kroah-Hartman）。線上版本在 https://lwn.net/Kernel/LDD3/ 。
 
   《Linux核心設計與實現》（Robert Love）
 
@@ -54,9 +55,9 @@
 以及您如何參與這個過程。
 
 最後，重要的是參與。任何開源軟體專案都不會超過其貢獻者投入其中的總和。Linux
-核心的發展速度和以前一樣快，因為它得到了大量開發人員的幫助，他們都在努力使它
-變得更好。核心是一個最成功的例子，說明了當成千上萬的人為了一個共同的目標一起
-工作時，可以做出什麼。
+核心之所以能發展得如此迅速、如此良好，是因為有一大群人數驚人的開發人員協助，
+他們都在努力使它變得更好。核心是一個最成功的例子，說明了當成千上萬的人為了一個
+共同的目標一起工作時，可以做出什麼。
 
 不過，核心總是可以從更大的開發人員基礎中獲益。總有更多的工作要做。但是同樣
 重要的是，Linux生態系統中的大多數其他參與者可以透過為核心做出貢獻而受益。
