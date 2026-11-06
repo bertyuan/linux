@@ -70,11 +70,11 @@ TODOList:
    stable-api-nonsense
    stable-kernel-rules
    management-style
+   researcher-guidelines
 
 TODOList:
 
 * contribution-maturity-model
-* researcher-guidelines
 * generated-content
 * coding-assistants
 * conclave
