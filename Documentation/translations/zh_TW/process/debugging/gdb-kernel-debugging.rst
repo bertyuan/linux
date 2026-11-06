@@ -1,67 +1,75 @@
+.. SPDX-License-Identifier: GPL-2.0
+
 .. highlight:: none
 
 .. include:: ../../disclaimer-zh_TW.rst
-.. include:: ../../unmaintained-zh_TW.rst
 
 :Original: Documentation/process/debugging/gdb-kernel-debugging.rst
 
-通過gdb調試內核和模塊
-=====================
+透過gdb對核心與模組除錯
+=======================
 
-Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口，支持在運行時使用gdb
-調試Linux內核及其模塊。Gdb提供了一個強大的python腳本接口，內核也提供了一套
-輔助腳本以簡化典型的內核調試步驟。本文檔爲如何啓用和使用這些腳本提供了一個簡要的教程。
-此教程基於QEMU/KVM虛擬機，但文中示例也適用於其他gdb stub。
+核心除錯器kgdb、QEMU等hypervisor，或基於JTAG的硬體介面，都能在執行期間使用
+gdb對Linux核心及其模組除錯。Gdb提供了強大的python腳本介面，核心也提供了一組
+輔助腳本，可以簡化典型的核心除錯步驟。本文是一份簡短的教學，說明如何啟用與
+使用這些腳本。本文以QEMU/KVM虛擬機器作為目標，但其中的範例也同樣適用於其他
+gdb stub。
 
 
-環境配置要求
-------------
-
-- gdb 7.2+ (推薦版本: 7.4+) 且開啓python支持 (通常發行版上都已支持)
-
-設置
+需求
 ----
 
-- 創建一個QEMU/KVM的linux虛擬機（詳情請參考 www.linux-kvm.org 和 www.qemu.org ）。
-  對於交叉開發，https://landley.net/aboriginal/bin 提供了一些鏡像和工具鏈，
-  可以幫助搭建交叉開發環境。
+- gdb 7.2+（建議：7.4+），並啟用python支援（各發行版通常都已啟用）
 
-- 編譯內核時開啓CONFIG_GDB_SCRIPTS，關閉CONFIG_DEBUG_INFO_REDUCED。
-  如果架構支持CONFIG_FRAME_POINTER，請保持開啓。
 
-- 在guest環境上安裝該內核。如有必要，通過在內核command line中添加“nokaslr”來關閉KASLR。
-  此外，QEMU允許通過-kernel、-append、-initrd這些命令行選項直接啓動內核。
-  但這通常僅在不依賴內核模塊時纔有效。有關此模式的更多詳細信息，請參閱QEMU文檔。
-  在這種情況下，如果架構支持KASLR，應該在禁用CONFIG_RANDOMIZE_BASE的情況下構建內核。
+設定
+----
 
-- 啓用QEMU/KVM的gdb stub，可以通過如下方式實現
+- 為QEMU/KVM建立一台Linux虛擬機器（詳情請參考www.linux-kvm.org與
+  www.qemu.org）。若要進行交叉開發，https://landley.net/aboriginal/bin 提供了
+  一批機器映像檔與工具鏈，可以作為起點。
 
-    - 在VM啓動時，通過在QEMU命令行中添加“-s”參數
+- 建置核心時啟用CONFIG_GDB_SCRIPTS，但保持CONFIG_DEBUG_INFO_REDUCED關閉。
+  如果你的架構支援CONFIG_FRAME_POINTER，請保持啟用。
+
+- 在guest上安裝該核心，必要時在核心命令列加上“nokaslr”以關閉KASLR。
+  另外，QEMU也可以透過-kernel、-append、-initrd這些命令列選項直接啟動核心。
+  這通常只在你不依賴模組時才有用。關於此模式的詳細資訊，請參閱QEMU文件。
+  在這種情況下，如果架構支援KASLR，應該在停用CONFIG_RANDOMIZE_BASE的情況下
+  建置核心。
+
+- 建置gdb腳本（v5.1以上的核心需要此步驟）::
+
+    make scripts_gdb
+
+- 啟用QEMU/KVM的gdb stub，可以
+
+    - 在VM啟動時，於QEMU命令列加上“-s”
 
   或
 
-    - 在運行時通過從QEMU監視控制檯發送“gdbserver”
+    - 在執行期間，從QEMU monitor主控台下達“gdbserver”
 
-- 切換到/path/to/linux-build(內核源碼編譯)目錄
+- cd /path/to/linux-build
 
-- 啓動gdb：gdb vmlinux
+- 啟動gdb：gdb vmlinux
 
-  注意：某些發行版可能會將gdb腳本的自動加載限制在已知的安全目錄中。
-  如果gdb報告拒絕加載vmlinux-gdb.py（相關命令找不到），請將::
+  注意：某些發行版可能會將gdb腳本的自動載入限制在已知安全的目錄。
+  如果gdb回報拒絕載入vmlinux-gdb.py，請將::
 
     add-auto-load-safe-path /path/to/linux-build
 
-  添加到~/.gdbinit。更多詳細信息，請參閱gdb幫助信息。
+  加入~/.gdbinit。詳情請參閱gdb的說明。
 
-- 連接到已啓動的guest環境::
+- 連線到已開機的guest::
 
     (gdb) target remote :1234
 
 
-使用Linux提供的gdb腳本的示例
-----------------------------
+使用Linux提供的gdb輔助工具的範例
+--------------------------------
 
-- 加載模塊（以及主內核）符號::
+- 載入模組（以及主核心）的符號::
 
     (gdb) lx-symbols
     loading vmlinux
@@ -74,18 +82,18 @@ Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口�
     ...
     loading @0xffffffffa0000000: /home/user/linux/build/drivers/ata/ata_generic.ko
 
-- 對一些尚未加載的模塊中的函數函數設置斷點，例如::
+- 對某個尚未載入的模組函式設定中斷點，例如::
 
     (gdb) b btrfs_init_sysfs
     Function "btrfs_init_sysfs" not defined.
     Make breakpoint pending on future shared library load? (y or [n]) y
     Breakpoint 1 (btrfs_init_sysfs) pending.
 
-- 繼續執行::
+- 讓目標繼續執行::
 
     (gdb) c
 
-- 加載模塊並且能觀察到正在加載的符號以及斷點命中::
+- 在目標上載入模組，觀察符號的載入以及中斷點的觸發::
 
     loading @0xffffffffa0034000: /home/user/linux/build/lib/libcrc32c.ko
     loading @0xffffffffa0050000: /home/user/linux/build/lib/lzo/lzo_compress.ko
@@ -95,7 +103,7 @@ Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口�
     Breakpoint 1, btrfs_init_sysfs () at /home/user/linux/fs/btrfs/sysfs.c:36
     36              btrfs_kset = kset_create_and_add("btrfs", NULL, fs_kobj);
 
-- 查看內核的日誌緩衝區::
+- 傾印目標核心的日誌緩衝區::
 
     (gdb) lx-dmesg
     [     0.000000] Initializing cgroup subsys cpuset
@@ -107,21 +115,21 @@ Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口�
     [     0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
     ....
 
-- 查看當前task struct結構體的字段（僅x86和arm64支持）::
+- 檢視目前task struct的欄位（僅支援x86與arm64）::
 
     (gdb) p $lx_current().pid
     $1 = 4998
     (gdb) p $lx_current().comm
     $2 = "modprobe\000\000\000\000\000\000\000"
 
-- 對當前或指定的CPU使用per-cpu函數::
+- 針對目前或指定的CPU使用per-cpu函式::
 
     (gdb) p $lx_per_cpu(runqueues).nr_running
     $3 = 1
     (gdb) p $lx_per_cpu(runqueues, 2).nr_running
     $4 = 0
 
-- 使用container_of查看更多hrtimers信息::
+- 使用container_of輔助函式深入檢視hrtimers::
 
     (gdb) set $leftmost = $lx_per_cpu(hrtimer_bases).clock_base[0].active.rb_root.rb_leftmost
     (gdb) p *$container_of($leftmost, "struct hrtimer", "node")
@@ -144,10 +152,11 @@ Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口�
     }
 
 
-命令和輔助調試功能列表
-----------------------
+命令與函式列表
+--------------
 
-命令和輔助調試功能可能會隨着時間的推移而改進，此文顯示的是初始版本的部分示例::
+命令與便利函式（convenience function）的數量可能會隨時間演進，以下只是初始
+版本的快照::
 
  (gdb) apropos lx
  function lx_current -- Return current task
@@ -159,6 +168,13 @@ Kgdb內核調試器、QEMU等虛擬機管理程序或基於JTAG的硬件接口�
  lx-lsmod -- List currently loaded modules
  lx-symbols -- (Re-)load symbols of Linux kernel and currently loaded modules
 
-可以通過“help <command-name>”或“help function <function-name>”命令
-獲取指定命令或指定調試功能的更多詳細信息。
+命令的詳細說明可以透過“help <command-name>”取得，便利函式的詳細說明則可以
+透過“help function <function-name>”取得。
 
+除錯GDB腳本
+-----------
+
+GDB並未啟用完整的Python回溯（backtrace），這可能讓除錯GDB腳本變得比必要的
+更困難。以下設定可以印出python環境的完整回溯::
+
+ (gdb) set python print-stack full
