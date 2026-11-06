@@ -40,6 +40,7 @@
 .. toctree::
    :maxdepth: 1
 
+   changes
    programming-language
    coding-style
    maintainer-pgp-guide
@@ -49,7 +50,6 @@
 
 TODOList:
 
-* changes
 * backporting
 * adding-syscalls
 * botching-up-ioctls
