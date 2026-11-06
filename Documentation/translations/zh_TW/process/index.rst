@@ -116,11 +116,8 @@ TODOList:
 .. toctree::
    :maxdepth: 1
 
+   kernel-docs
    deprecated
-
-TODOList:
-
-* kernel-docs
 
 .. only::  subproject and html
 
