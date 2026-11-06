@@ -72,12 +72,12 @@ TODOList:
    stable-kernel-rules
    management-style
    researcher-guidelines
+   conclave
 
 TODOList:
 
 * generated-content
 * coding-assistants
-* conclave
 
 處理缺陷
 --------
