@@ -90,13 +90,13 @@ TODOList:
 
    debugging/index
    security-bugs
+   cve
    embargoed-hardware-issues
 
 TODOList:
 
 * handling-regressions
 * threat-model
-* cve
 
 維護者資訊
 ----------
