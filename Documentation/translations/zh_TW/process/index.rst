@@ -104,10 +104,7 @@ TODOList:
    :maxdepth: 1
 
    maintainer-handbooks
-
-TODOList:
-
-* maintainers
+   maintainers
 
 其他材料
 --------
