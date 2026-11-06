@@ -65,6 +65,7 @@ TODOList:
    license-rules
    code-of-conduct
    code-of-conduct-interpretation
+   contribution-maturity-model
    kernel-enforcement-statement
    kernel-driver-statement
    stable-api-nonsense
@@ -74,7 +75,6 @@ TODOList:
 
 TODOList:
 
-* contribution-maturity-model
 * generated-content
 * coding-assistants
 * conclave
