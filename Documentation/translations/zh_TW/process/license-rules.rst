@@ -31,7 +31,7 @@ MIT等許可。
 
 使用者空間API（UAPI）標頭檔描述了使用者空間程式與核心的介面，這是一種特殊
 情況。根據核心COPYING檔案中的註解，syscall介面是一個明確的邊界，它不會將
-GPL要求擴展到任何使用它與核心通信的軟體。由於UAPI標頭檔必須包含在建立在
+GPL要求擴充到任何使用它與核心通訊的軟體。由於UAPI標頭檔必須包含在建立在
 Linux核心上執行的可執行檔案的任何原始檔中，因此此例外必須記錄在特別的許可
 證表述中。
 
@@ -41,7 +41,7 @@ Linux核心上執行的可執行檔案的任何原始檔中，因此此例外必
 
 樣板文本的替代方法是在每個原始檔中使用軟體套件資料交換（SPDX）許可證識別碼。
 SPDX許可證識別碼是機器可解析的，並且是用於提供檔案內容的許可證的精確縮寫。
-SPDX許可證識別碼由Linux 基金會的SPDX 工作組管理，並得到了整個行業，工具
+SPDX許可證識別碼由Linux 基金會的SPDX 工作組管理，並得到了整個產業，工具
 供應商和法律團隊的合作夥伴的一致同意。有關詳細資訊，請參閱
 https://spdx.org/
 
@@ -53,7 +53,7 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 許可識別碼語法
 --------------
 
-1.安置:
+1. 安置:
 
    核心檔案中的SPDX許可證識別碼應添加到可包含註解的檔案中的第一行。對於大多
    數檔案，這是第一行，除了那些在第一行中需要'#!PATH_TO_INTERPRETER'的腳本。
@@ -76,7 +76,7 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
       .dts{i}:	// SPDX-License-Identifier: <SPDX License Expression>
 
    如果特定工具無法處理標準註解樣式，則應使用工具接受的相應註解機制。這是在
-   C 標頭檔中使用“/\*\*/”樣式註解的原因。過去在使用產生的.lds檔案中觀察到
+   C 標頭檔中使用「/\* \*/」樣式註解的原因。過去在使用產生的.lds檔案中觀察到
    建置被破壞，其中'ld'無法解析C++註解。現在已經解決了這個問題，但仍然有較
    舊的組譯器工具無法處理C++樣式的註解。
 
@@ -84,9 +84,9 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 
 3. 句法:
 
-   <SPDX許可證表達式>是SPDX許可證列表中的SPDX短格式許可證識別碼，或者在許可
+   <SPDX許可證表示式>是SPDX許可證列表中的SPDX短格式許可證識別碼，或者在許可
    證例外適用時由“WITH”分隔的兩個SPDX短格式許可證識別碼的組合。當應用多個許
-   可證時，表達式由分隔子表達式的關鍵字“AND”，“OR”組成，並由“（”，“）”包圍。
+   可證時，表示式由分隔子表示式的關鍵字“AND”，“OR”組成，並由“（”，“）”包圍。
 
    帶有“或更高”選項的[L]GPL等許可證的許可證識別碼透過使用“+”來表示“或更高”
    選項來建置。::
@@ -94,7 +94,7 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
       // SPDX-License-Identifier: GPL-2.0+
       // SPDX-License-Identifier: LGPL-2.1+
 
-   當需要修正的許可證時，應使用WITH。 例如，linux核心UAPI檔案使用表達式::
+   當需要修正的許可證時，應使用WITH。 例如，linux核心UAPI檔案使用表示式::
 
       // SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note
       // SPDX-License-Identifier: GPL-2.0+ WITH Linux-syscall-note
@@ -112,7 +112,7 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 
       // SPDX-License-Identifier: GPL-2.0 OR BSD-3-Clause
 
-   核心中雙許可檔案中許可表達式的範例::
+   核心中雙許可檔案中許可表示式的範例::
 
       // SPDX-License-Identifier: GPL-2.0 OR MIT
       // SPDX-License-Identifier: GPL-2.0 OR BSD-2-Clause
@@ -134,7 +134,7 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 許可識別碼
 ----------
 
-當前使用的許可證以及添加到核心的程式碼許可證可以分解為：
+目前使用的許可證以及添加到核心的程式碼許可證可以分解為：
 
 1. _`優先許可`:
 
@@ -209,24 +209,25 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 
 |
 
-2. 不推薦的許可證:
+2. 已棄用的許可證:
 
-   這些許可證只應用於現有程式碼或從其他專案導入程式碼。這些許可證在核心目錄::
+   這些許可證只應用於現有程式碼或從其他專案匯入程式碼。這些許可證位於核心
+   原始程式碼樹的目錄::
 
-      LICENSES/other/
+      LICENSES/deprecated/
 
    此目錄中的檔案包含完整的許可證文本和 `元標記`_ 。檔名與SPDX許可證識別碼
    相同，後者應用於原始檔中的許可證。
 
    例如::
 
-      LICENSES/other/ISC
+      LICENSES/deprecated/ISC
 
-   包含國際系統聯合許可文本和所需的元標籤::
+   包含 Internet Systems Consortium 許可證文本和所需的元標籤::
 
-      LICENSES/other/ZLib
+      LICENSES/deprecated/GPL-1.0
 
-   包含ZLIB許可文本和所需的元標籤.
+   包含 GPL 版本 1 許可證文本和所需的元標籤。
 
    元標籤:
 
@@ -249,7 +250,49 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 
 |
 
-3. _`例外`:
+3. 僅限雙重許可
+
+   這些許可證只應用於對程式碼進行雙重許可，作為優先許可之外的另一個許可證。
+   這些許可證位於核心原始程式碼樹的目錄::
+
+      LICENSES/dual/
+
+   此目錄中的檔案包含完整的許可證文本和 `元標記`_ 。檔名與 SPDX 許可證識別碼
+   相同，後者應用於原始檔中的許可證。
+
+   例如::
+
+      LICENSES/dual/MPL-1.1
+
+   包含 Mozilla Public License 版本 1.1 許可證文本和所需的元標籤::
+
+      LICENSES/dual/Apache-2.0
+
+   包含 Apache License 版本 2.0 許可證文本和所需的元標籤。
+
+   元標籤:
+
+   「其他」許可證的元標籤要求與 `優先許可`_ 的要求相同。
+
+   檔案格式範例::
+
+      Valid-License-Identifier: MPL-1.1
+      SPDX-URL: https://spdx.org/licenses/MPL-1.1.html
+      Usage-Guide:
+        Do NOT use. The MPL-1.1 is not GPL2 compatible. It may only be used for
+        dual-licensed files where the other license is GPL2 compatible.
+        If you end up using this it MUST be used together with a GPL2 compatible
+        license using "OR".
+        To use the Mozilla Public License version 1.1 put the following SPDX
+        tag/value pair into a comment according to the placement guidelines in
+        the licensing rules documentation:
+      SPDX-License-Identifier: MPL-1.1
+      License-Text:
+        Full license text
+
+|
+
+4. _`例外`:
 
    某些許可證可以修改，並允許原始許可證不具有的某些例外權利。這些例外在
    核心目錄::
@@ -262,8 +305,9 @@ https://spdx.org/licenses/ 上的官方SPDX許可證列表中檢索，並附帶�
 
       LICENSES/exceptions/Linux-syscall-note
 
-   包含Linux核心的COPYING檔案中記錄的Linux系統呼叫例外，該檔案用於UAPI
-   標頭檔。例如::
+   包含Linux核心的COPYING檔案中記錄的Linux系統呼叫例外，該例外用於 UAPI
+   標頭檔。例如
+   /\* SPDX-License-Identifier: GPL-2.0 WITH Linux-syscall-note \*/::
 
       LICENSES/exceptions/GCC-exception-2.0
 
@@ -337,8 +381,8 @@ _`模組許可`
    許可證資訊（SPDX-License-Identifier），也不以任何方式表示或確定提供模組
    原始程式碼的確切許可證。
 
-   此標記的唯一目的是提供足夠的資訊，該模組是否是自由軟體或者是核心模組加
-   載器和使用者空間工具的專有模組。
+   此標記的唯一目的是為核心模組載入器和使用者空間工具提供足夠的資訊，以判斷
+   該模組是自由軟體還是專有軟體。
 
    MODULE_LICENSE（）的有效許可證字串是:
 
