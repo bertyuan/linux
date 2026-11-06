@@ -4,22 +4,24 @@
 
 .. include:: ../disclaimer-zh_TW.rst
 
-:Original: :ref:`Documentation/process/kernel-driver-statement.rst <process_statement_driver>`
+:Original: :ref:`Documentation/process/kernel-driver-statement.rst
+           <process_statement_driver>`
 
-內核驅動聲明
-------------
+核心驅動程式聲明
+----------------
 
-關於Linux內核模塊的立場聲明
+關於Linux核心模組的立場聲明
 ===========================
 
-我們，以下署名的Linux內核開發人員，認爲任何封閉源Linux內核模塊或驅動程序都是
-有害的和不可取的。我們已經一再發現它們對Linux用戶，企業和更大的Linux生態系統
-有害。這樣的模塊否定了Linux開發模型的開放性，穩定性，靈活性和可維護性，並使
-他們的用戶無法使用Linux社區的專業知識。提供閉源內核模塊的供應商迫使其客戶
-放棄Linux的主要優勢或選擇新的供應商。因此，爲了充分利用開源所提供的成本節省和
-共享支持優勢，我們敦促供應商採取措施，以開源內核代碼在Linux上爲其客戶提供支持。
+我們，以下署名的Linux核心開發人員，認為任何閉源的Linux核心模組或驅動程式都是
+有害且不可取的。我們一再發現它們對Linux使用者、企業以及更廣大的Linux生態系統
+有害。這樣的模組否定了Linux開發模式的開放性、穩定性、彈性和可維護性，並使
+其使用者無法獲得Linux社群的專業知識。提供閉源核心模組的供應商迫使其客戶
+放棄Linux的關鍵優勢，或是另選新的供應商。因此，為了充分享有開源所帶來的成本
+節省與共享支援的好處，我們敦促供應商採取以開源核心程式碼在Linux上支援其客戶的
+政策。
 
-我們只爲自己說話，而不是我們今天可能會爲之工作，過去或將來會爲之工作的任何公司。
+我們僅代表自己發言，而非代表我們目前、過去或將來可能任職的任何公司。
 
  - Dave Airlie
  - Nick Andrew
