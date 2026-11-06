@@ -103,9 +103,13 @@ TODOList:
 
 如何找到會接受你補丁的人。
 
+.. toctree::
+   :maxdepth: 1
+
+   maintainer-handbooks
+
 TODOList:
 
-* maintainer-handbooks
 * maintainers
 
 其他材料
