@@ -43,13 +43,13 @@
    programming-language
    coding-style
    email-clients
+   applying-patches
    volatile-considered-harmful
 
 TODOList:
 
 * changes
 * maintainer-pgp-guide
-* applying-patches
 * backporting
 * adding-syscalls
 * botching-up-ioctls
