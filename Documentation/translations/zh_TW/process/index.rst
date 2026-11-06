@@ -91,12 +91,9 @@ TODOList:
    debugging/index
    handling-regressions
    security-bugs
+   threat-model
    cve
    embargoed-hardware-issues
-
-TODOList:
-
-* threat-model
 
 維護者資訊
 ----------
