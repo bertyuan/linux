@@ -42,6 +42,7 @@
 
    programming-language
    coding-style
+   maintainer-pgp-guide
    email-clients
    applying-patches
    volatile-considered-harmful
@@ -49,7 +50,6 @@
 TODOList:
 
 * changes
-* maintainer-pgp-guide
 * backporting
 * adding-syscalls
 * botching-up-ioctls
