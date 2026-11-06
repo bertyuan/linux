@@ -89,13 +89,13 @@ TODOList:
    :maxdepth: 1
 
    debugging/index
+   handling-regressions
    security-bugs
    cve
    embargoed-hardware-issues
 
 TODOList:
 
-* handling-regressions
 * threat-model
 
 維護者資訊
