@@ -2,16 +2,18 @@
 
 .. include:: ../disclaimer-zh_TW.rst
 
-:Original: :ref:`Documentation/process/code-of-conduct-interpretation.rst <code_of_conduct_interpretation>`
+:Original: :ref:`Documentation/process/code-of-conduct-interpretation.rst
+           <code_of_conduct_interpretation>`
 
 .. _tw_code_of_conduct_interpretation:
 
 Linux核心貢獻者契約行為準則解釋
 ===============================
 
-:ref:`tw_code_of_conduct` 準則是一個通用文件，旨在為幾乎所有開源社群提供一套規則。
-每個開源社群都是獨一無二的，Linux核心也不例外。因此，本文描述了Linux核心社群中
-如何解釋它。我們也不希望這種解釋隨著時間的推移是靜態的，並將根據需要進行調整。
+:ref:`tw_code_of_conduct` 準則是一個通用文件，旨在為幾乎所有開源社群提供一套
+規則。每個開源社群都是獨一無二的，Linux核心也不例外。因此，本文描述了Linux核心
+社群中如何解釋它。我們也不希望這種解釋隨著時間的推移是靜態的，並將根據需要
+進行調整。
 
 與開發軟體的“傳統”方法相比，Linux核心開發工作是一個非常個人化的過程。你的貢獻
 和背後的想法將被仔細審查，往往導致批判和批評。審查將幾乎總是需要改進，材料才
@@ -23,7 +25,7 @@ Linux核心貢獻者契約行為準則解釋
 ------
 
 行為準則多次使用“維護者”一詞。在核心社群中，“維護者”是負責子系統、驅動程式或
-文件的任何人，並在核心原始程式碼樹的維護者文件中列出。
+檔案的任何人，並在核心原始程式碼樹的 MAINTAINERS 檔案中列出。
 
 責任
 ----
@@ -39,7 +41,7 @@ Linux核心貢獻者契約行為準則解釋
 維護人員應該願意在出現問題時提供幫助，並在需要時與社群中的其他人合作。如果您
 不確定如何處理出現的情況，請不要害怕聯繫技術諮詢委員會（TAB）或其他維護人員。
 除非您願意，否則不會將其視為違規報告。如果您不確定是否該聯繫TAB 或任何其他維
-護人員，請聯繫我們的衝突調解人 Mishi Choudhary <mishi@linux.com>。
+護人員，請聯繫我們的衝突調解人 Joanna Lee <jlee@linuxfoundation.org>。
 
 最後，“善待對方”才是每個人的最終目標。我們知道每個人都是人，有時我們都會失敗，
 但我們所有人的首要目標應該是努力友好地解決問題。執行行為準則將是最後的選擇。
@@ -64,7 +66,7 @@ Linux核心貢獻者契約行為準則解釋
 
 Linux核心社群主要在一組公共電子郵件列表上進行交互，這些列表分佈在由多個不同
 公司或個人控制的多個不同伺服器上。所有這些列表都在核心原始程式碼樹中的
-MAINTAINERS 文件中定義。發送到這些郵件列表的任何電子郵件都被視為包含在行為
+MAINTAINERS 檔案中定義。發送到這些郵件列表的任何電子郵件都被視為包含在行為
 準則中。
 
 使用 kernel.org bugzilla和其他子系統bugzilla 或bug追蹤工具的開發人員應該遵循
