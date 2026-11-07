@@ -3,7 +3,7 @@ Cc: Alex Shi <alexs@kernel.org>, Dongliang Mu <dzm91@hust.edu.cn>,
 	Yanteng Si <si.yanteng@linux.dev>,
 	Chen-Yu Yeh <chenyou910331@gmail.com>,
 	Weijie Yuan <wy@wyuan.org>
-Subject: What's cooking in Chinese docs (Nov 2026, #02)
+Subject: What's cooking in Chinese docs (Nov 2026, #03)
 
 Here are the topics for Chinese docs waiting to be merged.
 
@@ -40,7 +40,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH 12/13] docs/zh_TW: process: add threat-model.rst translation
   [PATCH 13/13] docs/zh_TW: process: add maintainers.rst translation
 
-  Needs review.
+  Waiting for response & Expecting a reroll.
   cf. <3bbce43f-476c-4a21-8da3-2be98a696e9c@hust.edu.cn>
   source: <20261106113545.708896-1-chenyou910331@gmail.com>
 
@@ -151,19 +151,19 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
   [PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation
 
-  Needs review.
+  Expecting a reroll.
   source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
 
 
 * Weijie Yuan 2026-08-23
   [PATCH v2 0/5] Update maintainer-pgp-guide.rst Chinese translation
-  [PATCH v2 1/5] docs/zh_CN: update maintainer-pgp-guide translation Weijie Yuan
-  [PATCH v2 2/5] docs/zh_CN: clarify free Nitrokey requirements Weijie Yuan
-  [PATCH v2 3/5] docs/zh_CN: update maintainer-pgp-guide kernel.org link Weijie Yuan
-  [PATCH v2 4/5] docs/zh_CN: add kernel.org trust repository reference Weijie Yuan
+  [PATCH v2 1/5] docs/zh_CN: update maintainer-pgp-guide translation
+  [PATCH v2 2/5] docs/zh_CN: clarify free Nitrokey requirements
+  [PATCH v2 3/5] docs/zh_CN: update maintainer-pgp-guide kernel.org link
+  [PATCH v2 4/5] docs/zh_CN: add kernel.org trust repository reference
   [PATCH v2 5/5] docs/zh_CN: remove empty proofreader field from maintainer PGP guide
 
-  Needs review.
+  Reviewed by Dongliang.
   source: <20260823-maintainer-pgp-guide-v2-0-bea33b2ece54@wyuan.org>
 
 
