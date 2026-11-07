@@ -3,7 +3,7 @@ Cc: Alex Shi <alexs@kernel.org>, Dongliang Mu <dzm91@hust.edu.cn>,
 	Yanteng Si <si.yanteng@linux.dev>,
 	Chen-Yu Yeh <chenyou910331@gmail.com>,
 	Weijie Yuan <wy@wyuan.org>
-Subject: What's cooking in Chinese docs (Nov 2026, #01)
+Subject: What's cooking in Chinese docs (Nov 2026, #02)
 
 Here are the topics for Chinese docs waiting to be merged.
 
@@ -22,45 +22,65 @@ Mirrors:
 Please report any mirror instability to linux-doc@vger.kernel.org
 
 -------------------------------------------------------------------
-[Stalled]
-
-* Yukai Wu 2026-08-29
-  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
-
-  Waiting for response for too long, stalled.
-  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
-
-
-* Chen Miao 2026-08-14
-  [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
-  [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
-
-  Waiting for response for too long, stalled.
-  cf. https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
-  source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
-  source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
-
-
-* Ye Liu 2026-08-19 1 commit
-  [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
-
-  Waiting for response for too long, stalled.
-  source: <20260819025535.2967566-1-ye.liu@linux.dev>
-
-
-* Cui Shuang 2026-07-22 1 commit
-  [PATCH v3] docs/zh_CN: Add configurable error injection translation
-
-  Waiting for response for too long, stalled.
-  source: <20260722123240.22979-1-imcusg@gmail.com>
-
--------------------------------------------------------------------
 [Cooking]
+
+* Chen-Yu Yeh 2026-11-06
+  [PATCH 00/13] docs/zh_TW: process: add translations of 13 documents
+  [PATCH 01/13] docs/zh_TW: process: add researcher-guidelines.rst translation
+  [PATCH 02/13] docs/zh_TW: process: add cve.rst translation
+  [PATCH 03/13] docs/zh_TW: process: add applying-patches.rst translation
+  [PATCH 04/13] docs/zh_TW: process: add maintainer-pgp-guide.rst translation
+  [PATCH 05/13] docs/zh_TW: process: add changes.rst translation
+  [PATCH 06/13] docs/zh_TW: process: add handling-regressions.rst translation
+  [PATCH 07/13] docs/zh_TW: process: add deprecated.rst translation
+  [PATCH 08/13] docs/zh_TW: process: add kernel-docs.rst translation
+  [PATCH 09/13] docs/zh_TW: process: add maintainer-handbooks.rst translation
+  [PATCH 10/13] docs/zh_TW: process: add contribution-maturity-model.rst translation
+  [PATCH 11/13] docs/zh_TW: process: add conclave.rst translation
+  [PATCH 12/13] docs/zh_TW: process: add threat-model.rst translation
+  [PATCH 13/13] docs/zh_TW: process: add maintainers.rst translation
+
+  Needs review.
+  cf. <3bbce43f-476c-4a21-8da3-2be98a696e9c@hust.edu.cn>
+  source: <20261106113545.708896-1-chenyou910331@gmail.com>
+
+
+* Chen-Yu Yeh 2026-11-06
+  [PATCH 00/25] docs/zh_TW: process: resync translations with the English originals
+  [PATCH 01/25] docs/zh_TW: process: sync 1.Intro.rst with the English original
+  [PATCH 02/25] docs/zh_TW: process: sync 2.Process.rst with the English original
+  [PATCH 03/25] docs/zh_TW: process: sync 4.Coding.rst with the English original
+  [PATCH 04/25] docs/zh_TW: process: sync 5.Posting.rst with the English original
+  [PATCH 05/25] docs/zh_TW: process: sync 6.Followthrough.rst with the English original
+  [PATCH 06/25] docs/zh_TW: process: sync 7.AdvancedTopics.rst with the English original
+  [PATCH 07/25] docs/zh_TW: process: sync 8.Conclusion.rst with the English original
+  [PATCH 08/25] docs/zh_TW: process: sync code-of-conduct-interpretation.rst with the English original
+  [PATCH 09/25] docs/zh_TW: process: sync code-of-conduct.rst with the English original
+  [PATCH 10/25] docs/zh_TW: process: sync gdb-kernel-debugging.rst with the English original
+  [PATCH 11/25] docs/zh_TW: process: sync development-process.rst with the English original
+  [PATCH 12/25] docs/zh_TW: process: sync email-clients.rst with the English original
+  [PATCH 13/25] docs/zh_TW: process: sync kernel-driver-statement.rst with the English original
+  [PATCH 14/25] docs/zh_TW: process: sync kernel-enforcement-statement.rst with the English original
+  [PATCH 15/25] docs/zh_TW: process: sync management-style.rst with the English original
+  [PATCH 16/25] docs/zh_TW: process: sync security-bugs.rst with the English original
+  [PATCH 17/25] docs/zh_TW: process: sync volatile-considered-harmful.rst with the English original
+  [PATCH 18/25] docs/zh_TW: process: sync 3.Early-stage.rst with the English original
+  [PATCH 19/25] docs/zh_TW: process: sync coding-style.rst with the English original
+  [PATCH 20/25] docs/zh_TW: process: sync embargoed-hardware-issues.rst with the English original
+  [PATCH 21/25] docs/zh_TW: process: sync howto.rst with the English original
+  [PATCH 22/25] docs/zh_TW: process: sync license-rules.rst with the English original
+  [PATCH 23/25] docs/zh_TW: process: sync stable-api-nonsense.rst with the English original
+  [PATCH 24/25] docs/zh_TW: process: sync submit-checklist.rst with the English original
+  [PATCH 25/25] docs/zh_TW: process: sync submitting-patches.rst with the English original
+
+  Needs review.
+  source: <20261106113142.706783-1-chenyou910331@gmail.com>
+
 
 * Weijie Yuan 2026-10-30
   [PATCH v2] docs/zh_TW: drop unused enforcement statement label
 
-  Needs review.
+  Will queue?
   source: <auQwssHcQiM09SDd@wyuan.org>
 
 
@@ -228,5 +248,36 @@ If anyone has any objections, please let us know.
   cf. <aus2LTFjmZaZPomM@wyuan.org>
   source: <20260920073144.546566-1-renich@evalinux.com>
 
-PS The copy of this report is here now:
-   https://github.com/kernel-zh/linux-zh_TW.git meta
+
+* Yukai Wu 2026-08-29
+  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
+
+  Discarded for waiting for too long.
+  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
+
+
+* Chen Miao 2026-08-14
+  [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
+  [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
+
+  Discarded for waiting for too long.
+  cf. https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
+  source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
+  source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
+
+
+* Ye Liu 2026-08-19 1 commit
+  [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
+
+  Discarded for waiting for too long.
+  source: <20260819025535.2967566-1-ye.liu@linux.dev>
+
+
+* Cui Shuang 2026-07-22 1 commit
+  [PATCH v3] docs/zh_CN: Add configurable error injection translation
+
+  Discarded for waiting for too long.
+  source: <20260722123240.22979-1-imcusg@gmail.com>
+
+PS. The copy of this report is here now:
+    https://github.com/kernel-zh/linux-zh_TW.git meta
