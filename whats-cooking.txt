@@ -3,7 +3,7 @@ Cc: Alex Shi <alexs@kernel.org>, Dongliang Mu <dzm91@hust.edu.cn>,
 	Yanteng Si <si.yanteng@linux.dev>,
 	Chen-Yu Yeh <chenyou910331@gmail.com>,
 	Weijie Yuan <wy@wyuan.org>
-Subject: What's cooking in Chinese docs (Nov 2026, #03)
+Subject: What's cooking in Chinese docs (Nov 2026, #04)
 
 Here are the topics for Chinese docs waiting to be merged.
 
@@ -82,13 +82,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 
   Needs review.
   source: <20261106113142.706783-1-chenyou910331@gmail.com>
-
-
-* Weijie Yuan 2026-10-30
-  [PATCH v2] docs/zh_TW: drop unused enforcement statement label
-
-  Will queue?
-  source: <auQwssHcQiM09SDd@wyuan.org>
 
 
 * Dongliang Mu 2026-10-29
@@ -203,6 +196,13 @@ Queuing for 7.5 merge window.
 Currently here: https://github.com/kernel-zh/linux-zh_TW.git docs-next
 If anyone has any objections, please let us know.
 
+* Weijie Yuan 2026-10-30
+  [PATCH v2] docs/zh_TW: drop unused enforcement statement label
+
+  Will be queued after Chen-Yu's two new series land.
+  source: <auQwssHcQiM09SDd@wyuan.org>
+
+
 * Chen-Yu Yeh 2026-09-29
   [PATCH 0/3] docs/zh_TW: mark translations that are not kept in sync
   [PATCH 1/3] docs/zh_TW: add a notice for translations not kept in sync
@@ -259,7 +259,7 @@ If anyone has any objections, please let us know.
 * Yukai Wu 2026-08-29
   [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
 
-  Discarded for waiting for too long.
+  Discarded as waiting for too long.
   source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
 
 
@@ -267,7 +267,7 @@ If anyone has any objections, please let us know.
   [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
   [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
 
-  Discarded for waiting for too long.
+  Discarded as waiting for too long.
   cf. https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
   source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
   source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
@@ -276,14 +276,14 @@ If anyone has any objections, please let us know.
 * Ye Liu 2026-08-19 1 commit
   [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
 
-  Discarded for waiting for too long.
+  Discarded as waiting for too long.
   source: <20260819025535.2967566-1-ye.liu@linux.dev>
 
 
 * Cui Shuang 2026-07-22 1 commit
   [PATCH v3] docs/zh_CN: Add configurable error injection translation
 
-  Discarded for waiting for too long.
+  Discarded as waiting for too long.
   source: <20260722123240.22979-1-imcusg@gmail.com>
 
 PS. The copy of this report is here now:
