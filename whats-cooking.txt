@@ -24,6 +24,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Dongliang Mu 2026-11-08
+  [PATCH] docs/zh_CN: add clang-format guide translation
+
+  Needs review.
+  source: <20261108070826.2000511-1-dzm91@hust.edu.cn>
+
+
 * Chen-Yu Yeh 2026-11-06
   [PATCH 00/13] docs/zh_TW: process: add translations of 13 documents
   [PATCH 01/13] docs/zh_TW: process: add researcher-guidelines.rst translation
