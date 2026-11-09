@@ -24,6 +24,15 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Weijie Yuan 2026-11-09
+  [PATCH v3 0/2] docs/zh_CN: update maintainer/configure-git.rst
+  [PATCH v3 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
+  [PATCH v3 2/2] docs/zh_CN: improve maintainer/pull-requests translation
+
+  Needs review.
+  source: <20261109-configure-git-v3-0-d7807bb8e8c7@wyuan.org>
+
+
 * Dongliang Mu 2026-11-08
   [PATCH v2 0/4] docs/zh_CN: translate AI-related process guides
   [PATCH v2 1/4] docs/zh_CN: translate coding-assistants.rst
@@ -155,15 +164,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   Expecting a reroll.
   cf. <fcabf691-cca4-477d-b387-e50467a41408@hust.edu.cn>
   source: <20261028072643.32250-1-jiamingouyang13@gmail.com>
-
-
-* Weijie Yuan 2026-09-05
-  [PATCH v2 0/2] docs/zh_CN: update maintainer/configure-git.rst
-  [PATCH v2 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
-  [PATCH v2 2/2] docs/zh_CN: improve maintainer/pull-requests translation
-
-  Expecting a reroll.
-  source: <20260905-configure-git-v2-0-ab194db8c6b9@wyuan.org>
 
 
 * Weijie Yuan 2026-08-23
