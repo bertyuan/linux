@@ -33,7 +33,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   source: <20261109-configure-git-v3-0-d7807bb8e8c7@wyuan.org>
 
 
-* Dongliang Mu 2026-11-08
+* Dongliang Mu 2026-11-09
   [PATCH v2 0/4] docs/zh_CN: translate AI-related process guides
   [PATCH v2 1/4] docs/zh_CN: translate coding-assistants.rst
   [PATCH v2 2/4] docs/zh_CN: translate generated-content.rst
@@ -129,11 +129,28 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   source: <cover.1793279600.git.qiujiandong1998@gmail.com>
 
 
+* Jiaming Ouyang 2026-10-28
+  [PATCH v4] docs/zh_CN: add Chinese translation for usb/ohci.rst
+
+  Expecting a reroll.
+  cf. <fcabf691-cca4-477d-b387-e50467a41408@hust.edu.cn>
+  source: <20261028072643.32250-1-jiamingouyang13@gmail.com>
+
+
 * Yao Yiqi 2026-10-22
   [PATCH] docs/zh_CN: fix typos in admin-guide/README
 
   Reviewed by Dongliang.
   source: <20261022135949.361566-1-yyaqia@gmail.com>
+
+
+* Weijie Yuan 2026-10-21
+  [PATCH v3 0/2] docs/zh_CN: cleanup headers
+  [PATCH v3 1/2] docs/zh_CN: remove translator-related headers
+  [PATCH v3 2/2] docs/zh_CN: remove Translator field in header template
+
+  Partly reviewed by Dongliang with an extra question to Jon.
+  source: <cover.1792569583.git.wy@wyuan.org>
 
 
 * Yikun Wei 2026-10-20
@@ -147,23 +164,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   Expecting a reroll. (thread broken)
   cf. <6baba360-6ee2-4195-91e4-d22c97d3c146@hust.edu.cn>
   source: <SI2PPFCA6543649A166AABA54D11A931F7DDD672@SI2PPFCA6543649.apcprd04.prod.outlook.com>
-
-
-* Weijie Yuan 2026-10-21
-  [PATCH v3 0/2] docs/zh_CN: cleanup headers
-  [PATCH v3 1/2] docs/zh_CN: remove translator-related headers
-  [PATCH v3 2/2] docs/zh_CN: remove Translator field in header template
-
-  Partly reviewed by Dongliang with an extra question to Jon.
-  source: <cover.1792569583.git.wy@wyuan.org>
-
-
-* Jiaming Ouyang 2026-10-28
-  [PATCH v4] docs/zh_CN: add Chinese translation for usb/ohci.rst
-
-  Expecting a reroll.
-  cf. <fcabf691-cca4-477d-b387-e50467a41408@hust.edu.cn>
-  source: <20261028072643.32250-1-jiamingouyang13@gmail.com>
 
 
 * Weijie Yuan 2026-08-23
