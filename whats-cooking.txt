@@ -255,47 +255,5 @@ If anyone has any objections, please let us know.
   Acked by Weijie.
   source: <20260929115956.229610-1-chenyou910331@gmail.com>
 
--------------------------------------------------------------------
-[Discarded]
-
-* Rénich Bon Ćirić 2026-09-20
-  [PATCH] docs/zh_CN: fix stale :Original: reference in xfrm_proc.rst
-
-  Replaced by Dongliang's <20261029124429.294868-1-dzm91@hust.edu.cn>
-  cf. <20261029124429.294868-9-dzm91@hust.edu.cn>
-  cf. <aus2LTFjmZaZPomM@wyuan.org>
-  source: <20260920073144.546566-1-renich@evalinux.com>
-
-
-* Yukai Wu 2026-08-29
-  [PATCH] docs/zh_CN: Update arch/riscv/vm-layout.rst translation
-
-  Discarded as waiting for too long.
-  source: <20260829041542.256360-1-xiaoyewuz.Ruster@gmail.com>
-
-
-* Chen Miao 2026-08-14
-  [PATCH v4 5/6] docs/zh_CN: doc-guide: document macOS Sphinx setup
-  [PATCH v4 6/6] docs/zh_CN: how-to: document case-sensitive APFS setup
-
-  Discarded as waiting for too long.
-  cf. https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/
-  source: https://lore.kernel.org/linux-doc/b233295b-64c0-4d50-a0fd-516e4795eb96@hust.edu.cn/ (PATCH 5/6)
-  source: https://lore.kernel.org/linux-doc/20260814214419.49925-6-chenmiao.ku@gmail.com/ (PATCH 6/6)
-
-
-* Ye Liu 2026-08-19 1 commit
-  [RESEND PATCH v2] docs/zh_CN: sync page_table_check.rst translation
-
-  Discarded as waiting for too long.
-  source: <20260819025535.2967566-1-ye.liu@linux.dev>
-
-
-* Cui Shuang 2026-07-22 1 commit
-  [PATCH v3] docs/zh_CN: Add configurable error injection translation
-
-  Discarded as waiting for too long.
-  source: <20260722123240.22979-1-imcusg@gmail.com>
-
 PS. The copy of this report is here now:
     https://github.com/kernel-zh/linux-zh_TW.git meta
