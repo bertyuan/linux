@@ -25,6 +25,17 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 [Cooking]
 
 * Dongliang Mu 2026-11-08
+  [PATCH 0/4] docs/zh_CN: translate AI-related process guides
+  [PATCH 1/4] docs/zh_CN: translate coding-assistants.rst
+  [PATCH 2/4] docs/zh_CN: translate generated-content.rst
+  [PATCH 3/4] docs/zh_CN: translate threat-model.rst
+  [PATCH 4/4] docs/zh_CN: link AI guide to translated documents
+
+  Needs review.
+  source: <cover.1794153793.git.dzm91@hust.edu.cn>
+
+
+* Dongliang Mu 2026-11-08
   [PATCH] docs/zh_CN: add clang-format guide translation
 
   Needs review.
