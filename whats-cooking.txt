@@ -67,7 +67,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH 12/13] docs/zh_TW: process: add threat-model.rst translation
   [PATCH 13/13] docs/zh_TW: process: add maintainers.rst translation
 
-  Waiting for response & Expecting a reroll.
+  Expecting a reroll.
   cf. <3bbce43f-476c-4a21-8da3-2be98a696e9c@hust.edu.cn>
   source: <20261106113545.708896-1-chenyou910331@gmail.com>
 
