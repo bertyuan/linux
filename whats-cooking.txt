@@ -24,6 +24,15 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Xiongwei Song 2026-11-13
+  [PATCH 0/2] Add RCU docs Chinese translation
+  [PATCH 1/2] docs/zh_CN: Add RCU/index.rst translation
+  [PATCH 2/2] docs/zh_CN: Add RCU/whatisRCU.rst Chinese translation
+
+  Needs review.
+  source: <20261113013054.5662-1-xiongwei.song@linux.dev>
+
+
 * Weijie Yuan 2026-11-09
   [PATCH v3 0/2] docs/zh_CN: update maintainer/configure-git.rst
   [PATCH v3 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
