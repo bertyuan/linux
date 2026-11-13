@@ -109,7 +109,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH 24/25] docs/zh_TW: process: sync submit-checklist.rst with the English original
   [PATCH 25/25] docs/zh_TW: process: sync submitting-patches.rst with the English original
 
-  Needs review.
+  Waiting for response.
   source: <20261106113142.706783-1-chenyou910331@gmail.com>
 
 
