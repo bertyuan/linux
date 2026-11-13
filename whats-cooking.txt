@@ -24,6 +24,20 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Yikun Wei 2026-11-13
+  [PATCH] docs/zh_CN: Add deprecated translation
+
+  Needs review.
+  source: <20261113122844.24838-1-YikunWei@126.com>
+
+
+* Yikun Wei 2026-11-13
+  [PATCH] docs/zh_CN: Add contribution maturity model translation
+
+  Needs review.
+  source: <20261113112200.16790-1-YikunWei@126.com>
+
+
 * Xiongwei Song 2026-11-13
   [PATCH 0/2] Add RCU docs Chinese translation
   [PATCH 1/2] docs/zh_CN: Add RCU/index.rst translation
