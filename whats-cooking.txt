@@ -24,6 +24,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Yikun Wei 2026-11-14
+  [PATCH] docs/zh_CN: Add backporting translation
+
+  Needs review.
+  source: <20261114043633.7459-1-YikunWei@126.com>
+
+
 * Yikun Wei 2026-11-13
   [PATCH] docs/zh_CN: Add deprecated translation
 
