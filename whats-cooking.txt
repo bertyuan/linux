@@ -24,6 +24,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Yaoze Wang 2026-11-15
+  [PATCH] docs/zh_CN: Add i3c Chinese translation
+
+  Needs review.
+  source: <20261115034307.15-1-wangyaoze999@gmail.com>
+
+
 * Yikun Wei 2026-11-14
   [PATCH] docs/zh_CN: Add backporting translation
 
