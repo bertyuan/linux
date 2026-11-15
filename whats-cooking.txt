@@ -24,6 +24,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Yikun Wei 2026-11-15
+  [PATCH] docs/zh_CN: Add botching-up-ioctls translation
+
+  Needs review.
+  source: <20261115125052.59015-1-YikunWei@126.com>
+
+
 * Yaoze Wang 2026-11-15
   [PATCH] docs/zh_CN: Add i3c Chinese translation
 
