@@ -73,7 +73,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH v3 1/2] docs/zh_CN: sync maintainer/configure-git with upstream
   [PATCH v3 2/2] docs/zh_CN: improve maintainer/pull-requests translation
 
-  Needs review.
+  Reviewed by Dongliang.
   source: <20261109-configure-git-v3-0-d7807bb8e8c7@wyuan.org>
 
 
