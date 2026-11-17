@@ -47,7 +47,7 @@ Please report any mirror instability to linux-doc@vger.kernel.org
   [PATCH 1/2] docs/zh_CN: Add RCU/index.rst translation
   [PATCH 2/2] docs/zh_CN: Add RCU/whatisRCU.rst Chinese translation
 
-  Waiting for response. Expecting a reroll.
+  Expecting a reroll.
   cf. <14c51094-0bb0-4cf8-8daf-0d307d5436db@hust.edu.cn>
   source: <20261113013054.5662-1-xiongwei.song@linux.dev>
 
