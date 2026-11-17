@@ -24,11 +24,15 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
-* Yikun Wei 2026-11-15
-  [PATCH] docs/zh_CN: Add botching-up-ioctls translation
+* Yikun Wei 2026-11-17
+  [PATCH v2 0/4] docs/zh_CN: Add four process translations
+  [PATCH v2 1/4] docs/zh_CN: Add contribution maturity model translation
+  [PATCH v2 2/4] docs/zh_CN: Add deprecated translation
+  [PATCH v2 3/4] docs/zh_CN: Add backporting translation
+  [PATCH v2 4/4] docs/zh_CN: Add botching-up-ioctls translation
 
   Needs review.
-  source: <20261115125052.59015-1-YikunWei@126.com>
+  source: <20261117115527.27937-1-YikunWei@126.com>
 
 
 * Yaoze Wang 2026-11-15
@@ -36,29 +40,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 
   Needs review.
   source: <20261115034307.15-1-wangyaoze999@gmail.com>
-
-
-* Yikun Wei 2026-11-14
-  [PATCH] docs/zh_CN: Add backporting translation
-
-  Needs review.
-  source: <20261114043633.7459-1-YikunWei@126.com>
-
-
-* Yikun Wei 2026-11-13
-  [PATCH] docs/zh_CN: Add deprecated translation
-
-  Waiting for response.
-  cf. <6a11fb6c-53f8-4804-859c-dcdb28ddce4b@hust.edu.cn>
-  source: <20261113122844.24838-1-YikunWei@126.com>
-
-
-* Yikun Wei 2026-11-13
-  [PATCH] docs/zh_CN: Add contribution maturity model translation
-
-  Waiting for response.
-  cf. <0b283f1a-d516-4fb6-b5bc-e3171d9c291a@hust.edu.cn>
-  source: <20261113112200.16790-1-YikunWei@126.com>
 
 
 * Xiongwei Song 2026-11-13
@@ -302,5 +283,35 @@ If anyone has any objections, please let us know.
   Acked by Weijie.
   source: <20260929115956.229610-1-chenyou910331@gmail.com>
 
-PS. The copy of this report is here now:
-    https://github.com/kernel-zh/linux-zh_TW.git meta
+-------------------------------------------------------------------
+[Discarded]
+
+* Yikun Wei 2026-11-15
+  [PATCH] docs/zh_CN: Add botching-up-ioctls translation
+
+  Replaced by a complete series.
+  source: <20261115125052.59015-1-YikunWei@126.com>
+
+
+* Yikun Wei 2026-11-14
+  [PATCH] docs/zh_CN: Add backporting translation
+
+  Replaced by a complete series.
+  source: <20261114043633.7459-1-YikunWei@126.com>
+
+
+* Yikun Wei 2026-11-13
+  [PATCH] docs/zh_CN: Add deprecated translation
+
+  Replaced by a complete series.
+  cf. <6a11fb6c-53f8-4804-859c-dcdb28ddce4b@hust.edu.cn>
+  source: <20261113122844.24838-1-YikunWei@126.com>
+
+
+* Yikun Wei 2026-11-13
+  [PATCH] docs/zh_CN: Add contribution maturity model translation
+
+  Replaced by a complete series.
+  cf. <0b283f1a-d516-4fb6-b5bc-e3171d9c291a@hust.edu.cn>
+  source: <20261113112200.16790-1-YikunWei@126.com>
+
