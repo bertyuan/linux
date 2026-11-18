@@ -24,6 +24,15 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Xiongwei Song 2026-11-18
+  [PATCH v2 0/2] Add RCU docs Chinese translation
+  [PATCH v2 1/2] docs/zh_CN: Add RCU/index.rst translation
+  [PATCH v2 2/2] docs/zh_CN: Add RCU/whatisRCU.rst Chinese translation
+
+  Needs review.
+  source: <20261118131636.5131-1-xiongwei.song@linux.dev>
+
+
 * Yikun Wei 2026-11-17
   [PATCH v2 0/4] docs/zh_CN: Add four process translations
   [PATCH v2 1/4] docs/zh_CN: Add contribution maturity model translation
@@ -40,16 +49,6 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 
   Needs review.
   source: <20261115034307.15-1-wangyaoze999@gmail.com>
-
-
-* Xiongwei Song 2026-11-13
-  [PATCH 0/2] Add RCU docs Chinese translation
-  [PATCH 1/2] docs/zh_CN: Add RCU/index.rst translation
-  [PATCH 2/2] docs/zh_CN: Add RCU/whatisRCU.rst Chinese translation
-
-  Expecting a reroll.
-  cf. <14c51094-0bb0-4cf8-8daf-0d307d5436db@hust.edu.cn>
-  source: <20261113013054.5662-1-xiongwei.song@linux.dev>
 
 
 * Weijie Yuan 2026-11-09
