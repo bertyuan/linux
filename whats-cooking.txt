@@ -24,6 +24,13 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
+* Zixin Wang 2026-11-19
+  [PATCH] docs/zh_CN: Add core-api/irq managed_irq Chinese translation
+
+  Needs review.
+  source: <20261119103147.112197-1-w1355457260@gmail.com>
+
+
 * Xiongwei Song 2026-11-18
   [PATCH v2 0/2] Add RCU docs Chinese translation
   [PATCH v2 1/2] docs/zh_CN: Add RCU/index.rst translation
