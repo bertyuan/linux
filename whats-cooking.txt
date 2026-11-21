@@ -24,12 +24,11 @@ Please report any mirror instability to linux-doc@vger.kernel.org
 -------------------------------------------------------------------
 [Cooking]
 
-* Zixin Wang 2026-11-19
-  [PATCH] docs/zh_CN: Add core-api/irq managed_irq Chinese translation
+* Zixin Wang 2026-11-21
+  [PATCH v2] docs/zh_CN: Add core-api/irq managed_irq Chinese translation
 
-  Waiting for response.
-  cf. <2909361d-d4d2-4f7e-9754-ec0f5dc5bbd3@linux.dev>
-  source: <20261119103147.112197-1-w1355457260@gmail.com>
+  Needs review.
+  source: <20261120160539.103773-1-w1355457260@gmail.com>
 
 
 * Xiongwei Song 2026-11-18
